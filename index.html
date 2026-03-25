@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🇯🇵 Planning Japon — Définitif</title>
+<title>🇯🇵 Japan Trip</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',sans-serif;background:#07071a;color:#eee;font-size:14px}
@@ -14,7 +14,6 @@ body{font-family:'Segoe UI',sans-serif;background:#07071a;color:#eee;font-size:1
 .ov{padding:8px 10px;border-radius:8px;font-size:.72em;text-align:center;border:1px solid #2a2a4a}
 .ov strong{display:block;font-size:1.05em;margin-bottom:2px}
 .ov span{color:#778;font-size:.95em}
-/* BAGGAGE LEGEND */
 .bag-legend{display:flex;gap:10px;flex-wrap:wrap;padding:10px 14px;background:#0d0d22;border-bottom:1px solid #1a1a3a;font-size:.72em;align-items:center}
 .bag-legend span{color:#99b}
 .bag-tag{padding:2px 8px;border-radius:4px;font-weight:600}
@@ -22,14 +21,12 @@ body{font-family:'Segoe UI',sans-serif;background:#07071a;color:#eee;font-size:1
 .bt-light{background:rgba(100,220,100,.12);color:#80dd80;border:1px solid #44aa4440}
 .bt-send{background:rgba(255,180,50,.12);color:#ffcc60;border:1px solid #ffaa0040}
 .bt-hotel{background:rgba(100,160,255,.12);color:#88bbff;border:1px solid #4488ff40}
-/* NAV */
 .nav{position:sticky;top:0;z-index:100;background:#0a0a1e;border-bottom:2px solid #ff6b9d;display:flex;overflow-x:auto;scrollbar-width:none}
 .nav::-webkit-scrollbar{display:none}
 .nb{padding:8px 10px;font-size:.68em;cursor:pointer;white-space:nowrap;border:none;background:transparent;color:#556;border-right:1px solid #141430;line-height:1.3;text-align:center;min-width:62px}
 .nb:hover{background:#141430;color:#ddd}
 .nb.act{background:rgba(255,107,157,.12);color:#ff6b9d;font-weight:700;border-bottom:2px solid #ff6b9d}
 .nb.wk{color:#86efac}.nb.tr{color:#64c8ff}.nb.fx{color:#d0a0ff}
-/* DAY */
 .day{display:none;padding-bottom:50px}
 .day.act{display:block}
 .dh{padding:14px 14px 10px;background:linear-gradient(to right,rgba(255,107,157,.07),rgba(80,80,200,.06));border-bottom:1px solid #181828}
@@ -37,11 +34,9 @@ body{font-family:'Segoe UI',sans-serif;background:#07071a;color:#eee;font-size:1
 .dmeta{display:flex;gap:10px;flex-wrap:wrap;font-size:.75em;color:#99b;margin-top:3px}
 .dbadge{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}
 .bdg{padding:2px 8px;border-radius:14px;font-size:.68em;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1)}
-/* Baggage status banner */
 .bag-status{margin:8px 14px 0;padding:7px 12px;border-radius:7px;font-size:.75em;background:rgba(255,180,50,.08);border:1px solid rgba(255,180,50,.3);color:#ffcc60;display:flex;align-items:center;gap:8px}
 .bag-status.safe{background:rgba(100,200,100,.08);border-color:rgba(100,200,100,.3);color:#80dd80}
 .bag-status.move{background:rgba(100,160,255,.08);border-color:rgba(100,160,255,.3);color:#88bbff}
-/* ALERTS */
 .al{margin:8px 14px 0;padding:8px 12px;border-radius:7px;font-size:.75em;border-left:3px solid;line-height:1.5}
 .al.w{background:rgba(255,203,71,.07);border-color:#ffcb47;color:#ffd060}
 .al.o{background:rgba(74,222,128,.06);border-color:#4ade80;color:#80e8a0}
@@ -49,7 +44,6 @@ body{font-family:'Segoe UI',sans-serif;background:#07071a;color:#eee;font-size:1
 .al.p{background:rgba(208,160,255,.07);border-color:#d0a0ff;color:#c8a8f8}
 .al.b{background:rgba(100,180,255,.07);border-color:#64b4ff;color:#90c8ff}
 .al.r{background:rgba(255,100,100,.07);border-color:#ff6464;color:#ff9090}
-/* TIMELINE */
 .tl{padding:4px 14px 0}
 .bl{display:flex}
 .tc{width:72px;min-width:72px;padding:11px 8px 8px 0;text-align:right;font-size:.7em;color:#445;font-weight:700;flex-shrink:0}
@@ -61,13 +55,6 @@ body{font-family:'Segoe UI',sans-serif;background:#07071a;color:#eee;font-size:1
 .bd{font-size:.74em;color:#99b;line-height:1.5}
 .tip{font-size:.7em;color:#ffcb47;margin-top:3px;font-style:italic}
 .dur{font-size:.67em;color:#445;margin-top:1px}
-/* bag inline */
-.bag{display:inline-block;padding:1px 6px;border-radius:3px;font-size:.7em;font-weight:600;margin-left:4px;vertical-align:middle}
-.bag.f{background:rgba(255,100,100,.15);color:#ff9090;border:1px solid #ff444440}
-.bag.l{background:rgba(100,220,100,.12);color:#90dd90;border:1px solid #44aa4440}
-.bag.s{background:rgba(255,180,50,.12);color:#ffcc70;border:1px solid #ffaa0040}
-.bag.h{background:rgba(100,160,255,.12);color:#99ccff;border:1px solid #4488ff40}
-/* TYPE COLORS */
 .s .dot{background:#2a2a5a}.s .btt{color:#7878b8}
 .p .dot{background:#3a2a5a}.p .btt{color:#9080b0}
 .t .dot{background:#0a3a5a}.t .btt{color:#58b8e8}
@@ -88,413 +75,413 @@ footer{text-align:center;padding:20px 14px;color:#2a2a4a;font-size:.72em;border-
 </head>
 <body>
 <div class="hdr">
-  <h1>🇯🇵 Planning Japon — Définitif</h1>
-  <p>26 mars → 10 avril 2026 · Tokyo · Nikko · Koyasan · Kyoto · Nara · Osaka · Kamakura · Yamagata</p>
+  <h1>🇯🇵 Japan Trip — Final Schedule</h1>
+  <p>March 26 → April 10, 2026 · Tokyo · Nikko · Koyasan · Kyoto · Nara · Osaka · Kamakura · Yamagata</p>
 </div>
 
 <div class="overview">
-  <div class="ov" style="border-color:#ff6b9d"><strong>🗼 Tokyo</strong><span>26–31 mar · 3–10 avr</span></div>
-  <div class="ov" style="border-color:#64c8ff"><strong>⛩️ Nikko</strong><span>26 mar — day trip</span></div>
-  <div class="ov" style="border-color:#d0a0ff"><strong>🏯 Koyasan</strong><span>31 mar — 1 nuit</span></div>
-  <div class="ov" style="border-color:#f9a8d4"><strong>🌸 Kyoto</strong><span>1 avr → 3 avr</span></div>
-  <div class="ov" style="border-color:#4ade80"><strong>🦌 Nara</strong><span>2 avr — day trip</span></div>
-  <div class="ov" style="border-color:#fdba74"><strong>🍜 Osaka</strong><span>2 avr — soirée</span></div>
-  <div class="ov" style="border-color:#86efac"><strong>🎋 Kamakura</strong><span>4 avr — day trip</span></div>
-  <div class="ov" style="border-color:#a78bfa"><strong>❄️ Yamagata</strong><span>5–7 avr</span></div>
+  <div class="ov" style="border-color:#ff6b9d"><strong>🗼 Tokyo</strong><span>Mar 26–31 · Apr 3–10</span></div>
+  <div class="ov" style="border-color:#64c8ff"><strong>⛩️ Nikko</strong><span>Mar 26 — day trip</span></div>
+  <div class="ov" style="border-color:#d0a0ff"><strong>🏯 Koyasan</strong><span>Mar 31 — 1 night</span></div>
+  <div class="ov" style="border-color:#f9a8d4"><strong>🌸 Kyoto</strong><span>Apr 1 → Apr 3</span></div>
+  <div class="ov" style="border-color:#4ade80"><strong>🦌 Nara</strong><span>Apr 2 — day trip</span></div>
+  <div class="ov" style="border-color:#fdba74"><strong>🍜 Osaka</strong><span>Apr 2 — evening</span></div>
+  <div class="ov" style="border-color:#86efac"><strong>🎋 Kamakura</strong><span>Apr 4 — day trip</span></div>
+  <div class="ov" style="border-color:#a78bfa"><strong>❄️ Yamagata</strong><span>Apr 5–7</span></div>
 </div>
 
 <div class="bag-legend">
-  <span>Valises :</span>
-  <span class="bag-tag bt-full">🧳🧳🧳🧳 4 valises avec vous</span>
-  <span class="bag-tag bt-light">🎒 Sacs légers (1 nuit)</span>
-  <span class="bag-tag bt-send">📦 Envoi Takkyubin (~1500¥/valise)</span>
-  <span class="bag-tag bt-hotel">🏨 Valises gardées à l'hôtel</span>
+  <span>Luggage:</span>
+  <span class="bag-tag bt-full">🧳🧳🧳🧳 All 4 suitcases with you</span>
+  <span class="bag-tag bt-light">🎒 Light bags (overnight)</span>
+  <span class="bag-tag bt-send">📦 Takkyubin delivery (~¥1500/bag)</span>
+  <span class="bag-tag bt-hotel">🏨 Suitcases stored at hotel</span>
 </div>
 
 <div class="nav" id="nav"></div>
 <div id="cont"></div>
 
 <footer>
-  ⚡ URGENT · <strong>Ghibli Museum</strong> → lawson.co.jp · <strong>teamLab Planets</strong> → teamlab.art/e/planets · <strong>Shukubo Koyasan</strong> → koyasan.or.jp ou booking.com (Ekoin, Haryo-in) · <strong>Kimono Kyoto</strong> → yumeyakata.com · <strong>Miyako Odori</strong> (geisha) · <strong>Café Loutre</strong> → se présenter directement (2500¥/50min, cash)<br>
-  📦 <strong>Takkyubin (Yamato Transport)</strong> : dépôt dans tout konbini (7-Eleven, Lawson), livraison 24h à l'hôtel suivant, ~1500¥/valise · Réservation optionnelle sur kuronekoyamato.co.jp<br>
-  🌧️ Jours pluie prévus : <strong>28 mars</strong> (teamLab ✅ intérieur) · <strong>8 avril</strong> (Akihabara + musées ✅ intérieur)
+  ⚡ URGENT BOOKINGS · <strong>Ghibli Museum</strong> → lawson.co.jp · <strong>teamLab Planets</strong> → teamlab.art/e/planets · <strong>Koyasan Shukubo</strong> → koyasan.or.jp or booking.com (Ekoin, Haryo-in) · <strong>Kimono Kyoto</strong> → yumeyakata.com · <strong>Miyako Odori</strong> (geisha show) · <strong>Loutre Otter Café</strong> → walk-in only (¥2500/50min, cash)<br>
+  📦 <strong>Takkyubin (Yamato Transport)</strong>: drop off at any konbini (7-Eleven, Lawson), delivered to your next hotel within 24h, ~¥1500/bag · Optional booking at kuronekoyamato.co.jp<br>
+  🌧️ Rain forecast: <strong>Mar 28</strong> (teamLab ✅ indoors) · <strong>Apr 8</strong> (Akihabara + museums ✅ indoors)
 </footer>
 
 <script>
 const D=[
-{id:"d1",nav:"26 Mar\nJeu",
-title:"Jeudi 26 mars — Nikko : Temples UNESCO dans les forêts ⛩️",
+{id:"d1",nav:"Mar 26\nThu",
+title:"Thursday March 26 — Nikko: UNESCO Temples in Ancient Forests ⛩️",
 loc:"Tokyo (Airbnb) → Nikko → Tokyo",
-wx:"🌤️ 13–17°C",sk:"🌸 Floraison active Tokyo",
-bags:"full",bagNote:"🧳×4 restent à l'Airbnb — vous partez à Nikko les mains libres",
-badges:["Tosho-gu UNESCO","Forêts cryptomères 1000 ans","Cascade Kegon 97m","Retour à l'Airbnb le soir"],
-alerts:[{t:"o",m:"✅ Day trip parfait : vous rentrez à l'Airbnb le soir. Zéro problème de bagages."},{t:"s",m:"🌸 Premiers cerisiers de Nikko en cours — l'atmosphère dans les forêts de cryptomères est magnifique."}],
+wx:"🌤️ 13–17°C",sk:"🌸 Cherry blossoms blooming in Tokyo",
+bags:"full",bagNote:"🧳×4 stay at the Airbnb — you travel to Nikko hands-free",
+badges:["Tosho-gu UNESCO","1000-year cryptomeria forests","Kegon Waterfall 97m","Back to Airbnb tonight"],
+alerts:[{t:"o",m:"✅ Perfect day trip: you return to the Airbnb tonight. Zero luggage issues."},{t:"s",m:"🌸 First cherry blossoms in Nikko — the atmosphere in the cryptomeria forests is magnificent."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit Airbnb",d:"7h de sommeil."},
-{ti:"07:30",type:"p",n:"Réveil + Préparation",d:"40 min. Konbini : onigiri + café. Habillement en couches — Nikko est plus froid (altitude).",dur:"40 min"},
-{ti:"08:10",type:"t",n:"Asakusa → Tobu Nikko Line",d:"Tobu Asakusa Station → Tobu Nikko Express → Tobu Nikko Station. 1h55 direct.",tip:"Tobu Nikko All Area Pass : 2670¥ AR + bus sur place illimités. Très pratique.",dur:"1h55"},
-{ti:"10:05",type:"t",n:"Bus → Shinkyo Bridge",d:"Bus depuis la gare. 10 min, inclus dans le pass.",dur:"10 min"},
-{ti:"10:15",type:"c",n:"🌉 Shinkyo Bridge — Pont vermillon sacré",d:"L'entrée symbolique de Nikko : pont laqué rouge sur la rivière Daiya encadré de cryptomères millénaires. 300¥.",dur:"20 min"},
-{ti:"10:35",type:"c",n:"⛩️ Tosho-gu — Sanctuaire de Tokugawa Ieyasu",d:"15 bâtiments couverts de sculptures peintes en or, rouge et bleu. Porte Yomeimon (récemment restaurée), les 3 singes célèbres, le chat dormant de Jingoro. UNESCO. Prenez le temps de tout regarder.",tip:"Montez les 207 marches jusqu'au tombeau d'Ieyasu — calme absolu dans les cryptomères.",dur:"2h"},
-{ti:"12:35",type:"c",n:"Rinnoji + Taiyuin Mausolée",d:"Rinnoji : 3 bouddhas dorés géants. Taiyuin : mausolée plus sombre et moins fréquenté, architecture laquée dans la forêt.",dur:"1h"},
-{ti:"13:35",type:"f",n:"Déjeuner — Yuba de Nikko",d:"Spécialité locale : peau de tofu (yuba) servie en soupe, sashimi ou ramen. Délicieux et original. Budget 1200–1800¥.",dur:"50 min"},
-{ti:"14:25",type:"e",n:"🌊 Cascade Kegon — 97 mètres",d:"Bus 15 min. La cascade la plus spectaculaire du Kanto dans un ravin verdoyant. Ascenseur panoramique jusqu'en bas (550¥). En avril, entourée de verdure fraîche.",dur:"50 min"},
-{ti:"15:15",type:"e",n:"Lac Chuzenji (optionnel)",d:"Bus 5 min. Lac de caldera d'un bleu profond. Très paisible.",dur:"40 min"},
-{ti:"15:55",type:"t",n:"Bus + Tobu Line → Tokyo (Airbnb)",d:"Retour Tobu Nikko Station → Asakusa. 1h55. Arrivée Tokyo ~18h30.",dur:"2h30"},
-{ti:"18:30",type:"r",n:"Dîner — Asakusa",d:"Tempura, soba, ou izakaya près du terminus Asakusa avec vue Tokyo Skytree.",dur:"1h30"},
-{ti:"20:00",type:"sk",n:"🌸 Meguro River ou Chidorigafuchi — Sakura de nuit",d:"Premier soir de sakura nocturne. Les cerisiers sont illuminés — expérience féérique.",dur:"1h30"},
-{ti:"21:30",type:"t",n:"Retour Airbnb",d:"20 min métro.",dur:"20 min"},
-{ti:"22:00",type:"s",n:"Sommeil",d:"🛌 7h. Demain : DisneySea !",dur:"7h"},
+{ti:"—",type:"s",n:"Night at Airbnb",d:"7 hours of sleep."},
+{ti:"07:30",type:"p",n:"Wake up + Get ready",d:"40 min. Konbini: onigiri + coffee. Dress in layers — Nikko is colder at altitude.",dur:"40 min"},
+{ti:"08:10",type:"t",n:"Asakusa → Tobu Nikko Line",d:"Tobu Asakusa Station → Tobu Nikko Express → Tobu Nikko Station. 1h55 direct.",tip:"Tobu Nikko All Area Pass: ¥2670 round-trip + unlimited buses on-site. Very convenient.",dur:"1h55"},
+{ti:"10:05",type:"t",n:"Bus → Shinkyo Bridge",d:"Bus from the station. 10 min, included in the pass.",dur:"10 min"},
+{ti:"10:15",type:"c",n:"🌉 Shinkyo Bridge — Sacred vermilion bridge",d:"Nikko's symbolic entrance: red lacquered bridge over the Daiya River, framed by thousand-year-old cryptomeria trees. ¥300.",dur:"20 min"},
+{ti:"10:35",type:"c",n:"⛩️ Tosho-gu — Tokugawa Ieyasu Shrine",d:"15 buildings covered in gold, red and blue painted carvings. Yomeimon Gate (recently restored), the famous 3 monkeys, Jingoro's sleeping cat. UNESCO. Take your time to see everything.",tip:"Climb the 207 steps to Ieyasu's mausoleum — absolute calm among the cryptomeria trees.",dur:"2h"},
+{ti:"12:35",type:"c",n:"Rinnoji + Taiyuin Mausoleum",d:"Rinnoji: 3 giant golden Buddhas. Taiyuin: darker and less crowded mausoleum, lacquered architecture in the forest.",dur:"1h"},
+{ti:"13:35",type:"f",n:"Lunch — Nikko Yuba",d:"Local specialty: tofu skin (yuba) served as soup, sashimi or ramen. Delicious and unique. Budget ¥1200–1800.",dur:"50 min"},
+{ti:"14:25",type:"e",n:"🌊 Kegon Waterfall — 97 meters",d:"15 min by bus. The most spectacular waterfall in Kanto, in a lush ravine. Panoramic elevator to the bottom (¥550). Surrounded by fresh spring greenery in April.",dur:"50 min"},
+{ti:"15:15",type:"e",n:"Lake Chuzenji (optional)",d:"5 min by bus. Deep blue volcanic crater lake. Very peaceful.",dur:"40 min"},
+{ti:"15:55",type:"t",n:"Bus + Tobu Line → Tokyo (Airbnb)",d:"Return from Tobu Nikko Station → Asakusa. 1h55. Arrive Tokyo ~18:30.",dur:"2h30"},
+{ti:"18:30",type:"r",n:"Dinner — Asakusa",d:"Tempura, soba, or izakaya near Asakusa terminal with Tokyo Skytree view.",dur:"1h30"},
+{ti:"20:00",type:"sk",n:"🌸 Meguro River or Chidorigafuchi — Night sakura",d:"First night of illuminated cherry blossoms. The trees are lit up — a magical experience.",dur:"1h30"},
+{ti:"21:30",type:"t",n:"Back to Airbnb",d:"20 min by metro.",dur:"20 min"},
+{ti:"22:00",type:"s",n:"Sleep",d:"🛌 7h. Tomorrow: DisneySea!",dur:"7h"},
 ]},
 
-{id:"d2",nav:"27 Mar\n🎡 Disney",navClass:"fx",
-title:"Vendredi 27 mars — DisneySea 🎡🌸 (25ème anniversaire !)",
+{id:"d2",nav:"Mar 27\n🎡 Disney",navClass:"fx",
+title:"Friday March 27 — DisneySea 🎡🌸 (25th Anniversary!)",
 loc:"DisneySea · Urayasu",
-wx:"🌤️ 14–17°C",sk:"🌸🌸 PIC SAKURA OFFICIEL TOKYO",
-bags:"full",bagNote:"🧳×4 restent à l'Airbnb — vous êtes à 5 min de DisneySea depuis Urayasu",
-badges:["DisneySea 25 ans","Cerisiers au pic absolu","Fantasmic! spectacle nuit"],
-alerts:[{t:"p",m:"🎡 25ème anniversaire en 2026 — événements spéciaux toute l'année."},{t:"s",m:"🌸 27 mars = pic de floraison officiel prédit pour Tokyo. Le parc en fleur = magie pure."}],
+wx:"🌤️ 14–17°C",sk:"🌸🌸 OFFICIAL TOKYO SAKURA PEAK",
+bags:"full",bagNote:"🧳×4 stay at the Airbnb — you're 5 min from DisneySea from Urayasu",
+badges:["DisneySea 25th anniversary","Cherry blossoms at absolute peak","Fantasmic! night show"],
+alerts:[{t:"p",m:"🎡 25th anniversary in 2026 — special events all year long."},{t:"s",m:"🌸 March 27 = official predicted peak bloom for Tokyo. The park in full bloom = pure magic."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit Airbnb",d:"7h — réveil tôt !"},
-{ti:"07:30",type:"p",n:"Réveil + Préparation",d:"40 min. Veste le matin, vous mangerez dans le parc.",dur:"40 min"},
-{ti:"08:10",type:"t",n:"Bus/taxi → DisneySea",d:"Depuis Urayasu : 5–10 min direct. Ou JR Keiyō → Maihama → Disney Resort Line.",tip:"App Tokyo Disney Resort = temps d'attente en temps réel.",dur:"20 min"},
-{ti:"08:45",type:"e",n:"File d'entrée avant ouverture",d:"Positionnez-vous. Les cerisiers du parc sont en pleine fleur.",dur:"15 min"},
-{ti:"09:00",type:"fx",n:"🎡 TOUTE LA JOURNÉE — DisneySea",d:"Priorités : Journey to the Center of the Earth ★★★★★, Indiana Jones Adventure, Tower of Terror, Soarin'. Disney Premier Access (payant) pour éviter les longues queues. Repas : fruits de mer, poulet, végétarien abondants.",tip:"Fantasmic! (eau + feu + lumières) vers 20h = NE MANQUEZ PAS CE SPECTACLE.",dur:"11h"},
-{ti:"20:30",type:"t",n:"Retour Airbnb",d:"Bus ou taxi direct Urayasu. 20–30 min.",dur:"25 min"},
-{ti:"21:00",type:"f",n:"Dîner rapide + Repos",d:"7-Eleven ou livraison. Bento, onigiri. Vous serez épuisés et heureux.",dur:"30 min"},
-{ti:"21:30",type:"s",n:"Sommeil",d:"🛌 7h30. Demain : teamLab + activité fixe.",dur:"7h30"},
+{ti:"—",type:"s",n:"Night at Airbnb",d:"7h — early wake up!"},
+{ti:"07:30",type:"p",n:"Wake up + Get ready",d:"40 min. Jacket for the morning — you'll eat inside the park.",dur:"40 min"},
+{ti:"08:10",type:"t",n:"Bus/taxi → DisneySea",d:"From Urayasu: 5–10 min direct. Or JR Keiyō → Maihama → Disney Resort Line.",tip:"Tokyo Disney Resort app = real-time wait times.",dur:"20 min"},
+{ti:"08:45",type:"e",n:"Queue before opening",d:"Get in position. The park's cherry trees are in full bloom.",dur:"15 min"},
+{ti:"09:00",type:"fx",n:"🎡 FULL DAY — DisneySea",d:"Top priorities: Journey to the Center of the Earth ★★★★★, Indiana Jones Adventure, Tower of Terror, Soarin'. Disney Premier Access (paid) to skip long queues. Food: seafood, chicken, vegetarian options available.",tip:"Fantasmic! (water + fire + lights) around 8pm = DO NOT MISS THIS SHOW.",dur:"11h"},
+{ti:"20:30",type:"t",n:"Back to Airbnb",d:"Direct bus or taxi from Urayasu. 20–30 min.",dur:"25 min"},
+{ti:"21:00",type:"f",n:"Quick dinner + Rest",d:"7-Eleven or delivery. Bento, onigiri. You'll be exhausted but happy.",dur:"30 min"},
+{ti:"21:30",type:"s",n:"Sleep",d:"🛌 7h30. Tomorrow: teamLab + fixed evening activity.",dur:"7h30"},
 ]},
 
-{id:"d3",nav:"28 Mar\n🌧️⚡",navClass:"fx",
-title:"Samedi 28 mars — teamLab Planets + Activité fixe 16h–minuit ⚡",
-loc:"Tokyo · Toyosu + Soirée",
-wx:"🌧️ 12–15°C — Pluie prévue",sk:"🌸 Sakura post-pic (encore très beau)",
-bags:"full",bagNote:"🧳×4 restent à l'Airbnb — journée 100% intérieure parfaite par pluie",
-badges:["teamLab Planets (100% intérieur)","Tsukiji Market","Activité fixe 16h–minuit"],
-alerts:[{t:"r",m:"🌧️ Pluie prévue — programme entièrement intérieur. Parfait."},{t:"p",m:"⚡ Activité fixe 16h–minuit. Matinée calée pour vous libérer à 15h30."}],
+{id:"d3",nav:"Mar 28\n🌧️⚡",navClass:"fx",
+title:"Saturday March 28 — teamLab Planets + Fixed Evening 4pm–midnight ⚡",
+loc:"Tokyo · Toyosu + Evening",
+wx:"🌧️ 12–15°C — Rain expected",sk:"🌸 Sakura post-peak (still very beautiful)",
+bags:"full",bagNote:"🧳×4 stay at the Airbnb — 100% indoor day perfect for rainy weather",
+badges:["teamLab Planets (100% indoors)","Tsukiji Market","Fixed activity 4pm–midnight"],
+alerts:[{t:"r",m:"🌧️ Rain expected — fully indoor program. Perfect."},{t:"p",m:"⚡ Fixed activity 4pm–midnight. Morning schedule adjusted to free you up by 3:30pm."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit Airbnb",d:"7h30 de repos."},
-{ti:"09:00",type:"p",n:"Réveil + Préparation",d:"40 min. Pantalons retroussables — vous marcherez dans l'eau à teamLab.",dur:"40 min"},
-{ti:"09:40",type:"t",n:"Métro → Toyosu (teamLab Planets)",d:"Yurikamome depuis Shimbashi → Shin-Toyosu. 22 min.",dur:"30 min"},
-{ti:"10:10",type:"c",n:"🎨 teamLab Planets",d:"4 installations pieds nus : fleurs infinies 360°, pièce d'eau (genoux) avec projections réactives à vos mouvements, forêt de cristaux, jardin infini. Élu meilleure attraction touristique d'Asie 2025.",tip:"Réservation OBLIGATOIRE en ligne : teamlab.art/e/planets — 3200¥/pers.",dur:"1h30"},
-{ti:"11:40",type:"t",n:"Métro → Tsukiji",d:"30 min.",dur:"30 min"},
-{ti:"12:10",type:"f",n:"Déjeuner — Tsukiji Outer Market",d:"Tamagoyaki chaud, sushi ultra-frais, huîtres grillées. Un des meilleurs déjeuners de Tokyo.",tip:"Arrivez avant 13h — certains stands ferment tôt.",dur:"1h"},
-{ti:"13:10",type:"sh",n:"Ginza — Itoya & Galeries gratuites",d:"Itoya (12 étages papeterie design japonaise), Shiseido Gallery (art contemporain gratuit).",dur:"1h"},
-{ti:"14:10",type:"t",n:"Retour Airbnb + Préparation soirée",d:"Douche, tenue pour l'activité.",dur:"50 min"},
-{ti:"16:00",type:"fx",n:"⚡ ACTIVITÉ FIXE — 16h à Minuit",d:"Profitez pleinement.",dur:"8h"},
-{ti:"00:00",type:"s",n:"Sommeil Airbnb",d:"🛌 7h de récupération.",dur:"7h"},
+{ti:"—",type:"s",n:"Night at Airbnb",d:"7h30 of rest."},
+{ti:"09:00",type:"p",n:"Wake up + Get ready",d:"40 min. Wear roll-up trousers — you'll walk through water at teamLab.",dur:"40 min"},
+{ti:"09:40",type:"t",n:"Metro → Toyosu (teamLab Planets)",d:"Yurikamome from Shimbashi → Shin-Toyosu. 22 min.",dur:"30 min"},
+{ti:"10:10",type:"c",n:"🎨 teamLab Planets",d:"4 barefoot installations: 360° infinite flowers, knee-deep water room with projections that react to your movements, crystal forest, infinite garden. Voted Asia's Leading Tourist Attraction 2025.",tip:"BOOKING REQUIRED online: teamlab.art/e/planets — ¥3200/person.",dur:"1h30"},
+{ti:"11:40",type:"t",n:"Metro → Tsukiji",d:"30 min.",dur:"30 min"},
+{ti:"12:10",type:"f",n:"Lunch — Tsukiji Outer Market",d:"Hot tamagoyaki, ultra-fresh sushi, grilled oysters. One of the best lunches in Tokyo.",tip:"Arrive before 1pm — some stalls close early.",dur:"1h"},
+{ti:"13:10",type:"sh",n:"Ginza — Itoya & Free Galleries",d:"Itoya (12-floor Japanese design stationery store), Shiseido Gallery (free contemporary art).",dur:"1h"},
+{ti:"14:10",type:"t",n:"Back to Airbnb + Get ready for evening",d:"Shower, outfit for the activity.",dur:"50 min"},
+{ti:"16:00",type:"fx",n:"⚡ FIXED ACTIVITY — 4pm to Midnight",d:"Enjoy it fully.",dur:"8h"},
+{ti:"00:00",type:"s",n:"Sleep at Airbnb",d:"🛌 7h of recovery.",dur:"7h"},
 ]},
 
-{id:"d4",nav:"29 Mar\n🌸 Hanami",
-title:"Dimanche 29 mars — Grand Hanami Tokyo 🌸🌸🌸",
+{id:"d4",nav:"Mar 29\n🌸 Hanami",
+title:"Sunday March 29 — Grand Hanami Tokyo 🌸🌸🌸",
 loc:"Tokyo · Airbnb",
-wx:"☀️ 14–18°C",sk:"🌸🌸 FLORAISON MAXIMALE — SOLEIL",
-bags:"full",bagNote:"🧳×4 restent à l'Airbnb — journée sakura libre et légère",
-badges:["Shinjuku Gyoen ouverture","Chidorigafuchi bateaux","Ueno Park hanami","Illuminations nuit"],
-alerts:[{t:"s",m:"🌸 Soleil prévu et sakura au maximum absolu. Journée entière dédiée aux cerisiers. C'est le moment le plus beau de l'année à Tokyo."}],
+wx:"☀️ 14–18°C",sk:"🌸🌸 MAXIMUM BLOOM — SUNNY",
+bags:"full",bagNote:"🧳×4 stay at the Airbnb — free and light for the full sakura day",
+badges:["Shinjuku Gyoen at opening","Chidorigafuchi rowboats","Ueno Park hanami","Night illuminations"],
+alerts:[{t:"s",m:"🌸 Sunny forecast and sakura at absolute maximum. Dedicate this entire day to the cherry blossoms. This is the most beautiful day of the year in Tokyo."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit Airbnb",d:"7h. Réveil tôt pour être avant les foules."},
-{ti:"07:00",type:"p",n:"Réveil + Préparation",d:"40 min. Snacks konbini pour le hanami.",dur:"40 min"},
-{ti:"07:40",type:"t",n:"Métro → Shinjuku Gyoen",d:"20 min.",dur:"20 min"},
-{ti:"09:00",type:"sk",n:"🌸 Shinjuku Gyoen — Ouverture (500¥)",d:"65 variétés de cerisiers dans 3 jardins. À l'ouverture : calme et lumière matinale entre les branches en fleur. Les photos à contre-jour sont extraordinaires.",tip:"Restez jusqu'à 10h max avant les foules. Alcool interdit, snacks autorisés.",dur:"1h45"},
-{ti:"10:45",type:"t",n:"Métro → Ueno",d:"20 min.",dur:"20 min"},
-{ti:"11:05",type:"sk",n:"🌸 Ueno Park — Hanami festif",d:"1000 cerisiers, des milliers de pique-niqueurs, musique, stands yatai. Ambiance de fête populaire japonaise unique. Shinobazu Pond avec les sakura reflétés dans le lac.",dur:"1h30"},
-{ti:"12:35",type:"f",n:"Déjeuner Yatai Ueno",d:"Yakisoba, takoyaki, brochettes, dango. Déjeuner festif en plein air.",dur:"45 min"},
-{ti:"13:20",type:"sk",n:"Cimetière Yanaka — Sakura secret",d:"10 min à pied d'Ueno. Tunnels de cerisiers, presque aucun touriste. Très local, très beau.",dur:"45 min"},
-{ti:"14:05",type:"t",n:"Métro → Kudanshita (Chidorigafuchi)",d:"20 min.",dur:"20 min"},
-{ti:"14:25",type:"sk",n:"🌸 Chidorigafuchi — Bateaux à rames",d:"Louez un bateau (700–900¥/pers) et ramez sous la voûte de cerisiers au-dessus des douves du Palais Impérial. Pétales qui tombent sur l'eau. Un des moments les plus beaux du voyage.",tip:"File possible 30–60 min. Arrivez après 16h pour moins attendre.",dur:"2h"},
-{ti:"16:25",type:"ca",n:"Café — Kagurazaka",d:"Quartier franco-japonais à 15 min à pied. Café dans une maison traditionnelle.",dur:"1h"},
-{ti:"17:25",type:"sk",n:"🌸 Meguro River — Illuminations sakura",d:"Dernier soir au pic absolu. Les cerisiers illuminés se reflètent dans le canal noir. Une des plus belles images du Japon.",dur:"1h30"},
-{ti:"18:55",type:"r",n:"Dîner spécial — Nakameguro",d:"Célébrez ! Kaiseki abordable, wagyu beef, ou sushi de qualité. Budget 4000–7000¥/pers.",dur:"1h30"},
-{ti:"20:25",type:"t",n:"Retour Airbnb",d:"20 min métro.",dur:"20 min"},
-{ti:"20:45",type:"s",n:"Sommeil Airbnb",d:"🛌 7h15.",dur:"7h15"},
+{ti:"—",type:"s",n:"Night at Airbnb",d:"7h. Early wake up to beat the crowds."},
+{ti:"07:00",type:"p",n:"Wake up + Get ready",d:"40 min. Konbini snacks for hanami picnic.",dur:"40 min"},
+{ti:"07:40",type:"t",n:"Metro → Shinjuku Gyoen",d:"20 min.",dur:"20 min"},
+{ti:"09:00",type:"sk",n:"🌸 Shinjuku Gyoen — Opening (¥500)",d:"65 cherry blossom varieties in 3 gardens. At opening: peaceful and the morning light filters beautifully through the blossoms. Backlit photos are extraordinary.",tip:"Leave by 10am before the crowds. No alcohol, snacks allowed.",dur:"1h45"},
+{ti:"10:45",type:"t",n:"Metro → Ueno",d:"20 min.",dur:"20 min"},
+{ti:"11:05",type:"sk",n:"🌸 Ueno Park — Festive Hanami",d:"1000 cherry trees, thousands of picnickers, music, food stalls. A uniquely Japanese festive atmosphere. Shinobazu Pond with blossoms reflected in the water.",dur:"1h30"},
+{ti:"12:35",type:"f",n:"Lunch — Ueno Food Stalls",d:"Yakisoba, takoyaki, skewers, dango. Festive outdoor lunch.",dur:"45 min"},
+{ti:"13:20",type:"sk",n:"Yanaka Cemetery — Secret Sakura",d:"10 min walk from Ueno. Tunnels of cherry trees, almost no tourists. Very local, very beautiful.",dur:"45 min"},
+{ti:"14:05",type:"t",n:"Metro → Kudanshita (Chidorigafuchi)",d:"20 min.",dur:"20 min"},
+{ti:"14:25",type:"sk",n:"🌸 Chidorigafuchi — Rowboats under cherry trees",d:"Rent a rowboat (¥700–900/person) and glide under the canopy of cherry blossoms over the Imperial Palace moat. Petals falling on the water. One of the most beautiful moments of the trip.",tip:"Possible 30–60 min queue. Arrive after 5pm for shorter wait.",dur:"2h"},
+{ti:"16:25",type:"ca",n:"Café — Kagurazaka",d:"15 min walk away. Franco-Japanese neighbourhood. Coffee in a traditional wooden house.",dur:"1h"},
+{ti:"17:25",type:"sk",n:"🌸 Meguro River — Night sakura illuminations",d:"Last night at absolute peak. Cherry trees lit up, reflected in the dark canal. One of Japan's most beautiful images.",dur:"1h30"},
+{ti:"18:55",type:"r",n:"Special Dinner — Nakameguro",d:"Celebrate! Affordable kaiseki, wagyu beef, or quality sushi. Budget ¥4000–7000/person.",dur:"1h30"},
+{ti:"20:25",type:"t",n:"Back to Airbnb",d:"20 min metro.",dur:"20 min"},
+{ti:"20:45",type:"s",n:"Sleep at Airbnb",d:"🛌 7h15.",dur:"7h15"},
 ]},
 
-{id:"d5",nav:"30 Mar\n💼 Akiha",navClass:"wk",
-title:"Lundi 30 mars — Asakusa + Akihabara + Travail 💼",
+{id:"d5",nav:"Mar 30\n💼 Akiha",navClass:"wk",
+title:"Monday March 30 — Asakusa + Akihabara + Work 💼",
 loc:"Tokyo · Airbnb",
-wx:"🌤️ 14–18°C",sk:"🌸 Sakura encore présent",
-bags:"full",bagNote:"🧳×4 restent à l'Airbnb — journée légère dans Tokyo",
-badges:["Asakusa Senso-ji","Akihabara 1h+ jeux","Boutique adulte Akihabara","Kappabashi","Travail 21h–01h"],
-alerts:[{t:"o",m:"💼 Travail flexible. Proposition : 21h–01h depuis l'Airbnb, journée entière libre."}],
+wx:"🌤️ 14–18°C",sk:"🌸 Sakura still present",
+bags:"full",bagNote:"🧳×4 stay at the Airbnb — light day around Tokyo",
+badges:["Asakusa Senso-ji Temple","Akihabara 1h+ gaming","Adult shop Akihabara","Kappabashi Street","Work 9pm–1am"],
+alerts:[{t:"o",m:"💼 Flexible work schedule. Suggestion: 9pm–1am from the Airbnb, full day free."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit Airbnb",d:"7h de sommeil."},
-{ti:"08:00",type:"p",n:"Réveil + Préparation",d:"40 min. Cash recommandé pour Akihabara.",dur:"40 min"},
-{ti:"08:40",type:"t",n:"Métro → Asakusa",d:"25 min.",dur:"25 min"},
-{ti:"09:05",type:"c",n:"Senso-ji — Tôt le matin",d:"Le plus ancien temple de Tokyo (645 ap. J.-C.). Paisible à cette heure. Kaminarimon, Nakamise-dori, grande pagode. Omikuji 100¥.",tip:"Avant 10h = calme presque mystique. Après 11h = marée de touristes.",dur:"1h"},
-{ti:"10:05",type:"sh",n:"Nakamise + Ruelles d'Asakusa",d:"Boutiques traditionnelles : éventails peints, yukata, sandales geta, papeterie japonaise. Shopping authentique.",dur:"45 min"},
-{ti:"10:50",type:"t",n:"Métro → Akihabara",d:"10 min.",dur:"10 min"},
-{ti:"11:00",type:"e",n:"⚡ Akihabara — Jeux 1h+",d:"Super Potato (jeux rétro légendaires, multi-étages), Taito Station (arcade 8 étages), Club Sega. UFO catchers, fighting games, rhythm games (Taiko, DDR), simulateurs.",tip:"Super Potato : cherchez le signe discret sur Chuo-dori. Les claw machines sont addictives.",dur:"1h30"},
-{ti:"12:30",type:"sh",n:"Akihabara — Boutique adulte",d:"Immeubles multi-étages autour de Chuo-dori. Discrets et bien organisés, rayons adultes aux étages supérieurs. Totalement normalisé culturellement au Japon.",dur:"45 min"},
-{ti:"13:15",type:"f",n:"Déjeuner — Ramen Akihabara",d:"Shoyu ou shio ramen dans l'un des nombreux restaurants du quartier.",dur:"45 min"},
-{ti:"14:00",type:"sh",n:"Kappabashi-dori — Arts culinaires",d:"Rue entière dédiée aux arts culinaires : couteaux artisanaux (excellents cadeaux), bols céramique, sets à thé, samples de nourriture en plastique hyperréalistes.",tip:"Pour les couteaux : Tsukiji Masamoto ou les boutiques spécialisées. Qualité exceptionnelle.",dur:"1h30"},
-{ti:"15:30",type:"e",n:"Ueno Musées (option) ou Yanaka",d:"Musée national de Tokyo ou ballade dans Yanaka (vieux quartier préservé).",dur:"1h30"},
-{ti:"17:00",type:"f",n:"Snack + Repos Airbnb",d:"Retour Airbnb avant le travail du soir.",dur:"2h"},
-{ti:"19:00",type:"e",n:"Soirée optionnelle — Shibuya ou Akihabara nuit",d:"Shibuya Crossing de nuit, ou Akihabara illuminé en néons — expérience unique.",dur:"2h"},
-{ti:"21:00",type:"w",n:"💼 TRAVAIL — 4 heures",d:"Depuis l'Airbnb. Connexion stable.",dur:"4h"},
-{ti:"01:00",type:"s",n:"Sommeil Airbnb",d:"🛌 7h — réveil 8h.",dur:"7h"},
+{ti:"—",type:"s",n:"Night at Airbnb",d:"7h of sleep."},
+{ti:"08:00",type:"p",n:"Wake up + Get ready",d:"40 min. Cash recommended for Akihabara.",dur:"40 min"},
+{ti:"08:40",type:"t",n:"Metro → Asakusa",d:"25 min.",dur:"25 min"},
+{ti:"09:05",type:"c",n:"Senso-ji Temple — Early morning",d:"Tokyo's oldest temple (645 AD). Peaceful at this hour. Kaminarimon Gate, Nakamise shopping street, great pagoda. Draw your omikuji fortune for ¥100.",tip:"Before 10am = magical quiet. After 11am = tourist flood.",dur:"1h"},
+{ti:"10:05",type:"sh",n:"Nakamise + Asakusa side streets",d:"Traditional shops: painted fans, yukata, geta sandals, Japanese stationery. Authentic shopping at factory prices.",dur:"45 min"},
+{ti:"10:50",type:"t",n:"Metro → Akihabara",d:"10 min.",dur:"10 min"},
+{ti:"11:00",type:"e",n:"⚡ Akihabara — Gaming 1h+",d:"Super Potato (legendary multi-floor retro games), Taito Station (8-floor arcade), Club Sega. UFO catchers, fighting games, rhythm games (Taiko, DDR), simulators.",tip:"Super Potato: look for the discrete sign on Chuo-dori. The claw machines are addictive.",dur:"1h30"},
+{ti:"12:30",type:"sh",n:"Akihabara — Adult shop",d:"Multi-floor buildings around Chuo-dori. Discreet and well-organised, adult sections on upper floors. Completely normalised culturally in Japan.",dur:"45 min"},
+{ti:"13:15",type:"f",n:"Lunch — Akihabara Ramen",d:"Shoyu or shio ramen at one of the many restaurants in the area.",dur:"45 min"},
+{ti:"14:00",type:"sh",n:"Kappabashi-dori — Culinary Arts Street",d:"Entire street dedicated to Japanese culinary arts: handcrafted knives (great gifts), ceramic bowls, tea sets, hyperrealistic plastic food samples.",tip:"For knives: Tsukiji Masamoto or the specialist shops. Exceptional quality.",dur:"1h30"},
+{ti:"15:30",type:"e",n:"Ueno Museums (optional) or Yanaka walk",d:"Tokyo National Museum or a stroll through Yanaka (preserved old neighbourhood).",dur:"1h30"},
+{ti:"17:00",type:"f",n:"Snack + Rest at Airbnb",d:"Return to the Airbnb before evening work.",dur:"2h"},
+{ti:"19:00",type:"e",n:"Optional evening — Shibuya or Akihabara at night",d:"Shibuya Crossing at night, or Akihabara lit up in neon — a unique experience.",dur:"2h"},
+{ti:"21:00",type:"w",n:"💼 WORK — 4 hours",d:"From the Airbnb. Stable internet connection.",dur:"4h"},
+{ti:"01:00",type:"s",n:"Sleep at Airbnb",d:"🛌 7h — wake up at 8am.",dur:"7h"},
 ]},
 
-{id:"d6",nav:"31 Mar\n📦 Koyasan",navClass:"fx",
-title:"Mardi 31 mars — Checkout Airbnb → Takkyubin → Koyasan 🏯",
+{id:"d6",nav:"Mar 31\n📦 Koyasan",navClass:"fx",
+title:"Tuesday March 31 — Checkout Airbnb → Takkyubin → Koyasan 🏯",
 loc:"Tokyo Airbnb → Konbini → Shinkansen → Koyasan",
-wx:"🌦️ 13–17°C",sk:"🌸 Cerisiers finissants Tokyo",
-bags:"send",bagNote:"📦 Ce matin : envoyez 3 ou 4 valises par Takkyubin depuis le konbini vers votre hôtel Kyoto. Gardez 1 petit sac par personne pour Koyasan (1 nuit). Les valises vous attendent à Kyoto le 1er avril.",
-badges:["Checkout Airbnb","📦 Takkyubin valises → Kyoto","Sacs légers → Koyasan","Nuit en temple bouddhiste"],
+wx:"🌦️ 13–17°C",sk:"🌸 Fading cherry blossoms in Tokyo",
+bags:"send",bagNote:"📦 This morning: send 3–4 suitcases via Takkyubin from the konbini to your Kyoto hotel. Keep 1 small overnight bag each for Koyasan. Suitcases will be waiting at your Kyoto hotel on April 1st.",
+badges:["Airbnb checkout","📦 Takkyubin suitcases → Kyoto","Light bags → Koyasan","Night in a Buddhist temple lodge"],
 alerts:[
-{t:"w",m:"🧳 LOGISTIQUE MATIN : avant de quitter l'Airbnb, emballez bien les valises. Rendez-vous au 7-Eleven ou Lawson le plus proche. Demandez un 'takkyubin' pour chaque valise avec l'adresse de votre hôtel Kyoto. Remplissez les étiquettes (adresse en japonais = pratique). Paiement sur place ~1500¥/valise. Livraison garantie le 1er avril à l'hôtel."},
-{t:"p",m:"🏯 Shukubo Koyasan : réservez MAINTENANT si pas encore fait. Recommandés : Ekoin (le plus international), Haryo-in, Rengejo-in. Budget 15 000–22 000¥/pers avec dîner + petit-déjeuner. Réservation : koyasan.or.jp/shukubo ou booking.com"}
+{t:"w",m:"🧳 MORNING LOGISTICS: before leaving the Airbnb, pack your suitcases. Head to the nearest 7-Eleven or Lawson. Ask for 'takkyubin' for each suitcase with your Kyoto hotel address. Fill in the labels (Japanese address = essential). Pay on the spot ~¥1500/bag. Guaranteed delivery April 1st to the hotel."},
+{t:"p",m:"🏯 Koyasan Shukubo: book NOW if not already done. Recommended: Ekoin (most international), Haryo-in, Rengejo-in. Budget ¥15,000–22,000/person with dinner + breakfast. Booking: koyasan.or.jp/shukubo or booking.com"}
 ],
 blocks:[
-{ti:"08:00",type:"s",n:"Réveil — Dernier matin Airbnb",d:"7h de sommeil."},
-{ti:"08:00",type:"p",n:"Réveil + Valises + Checkout",d:"Finalisez les bagages. Séparez ce dont vous avez besoin pour 1 nuit (Koyasan) du reste. Vérifiez chaque recoin de l'Airbnb.",dur:"1h"},
-{ti:"09:00",type:"bag-action",n:"📦 TAKKYUBIN — Envoi valises au 7-Eleven",d:"Portez les valises (3 ou 4) au konbini le plus proche. Demandez 'takkyubin onegaishimasu'. Remplissez les étiquettes avec l'adresse de votre hôtel Kyoto. Les valises seront livrées demain 1er avril à votre hôtel.",tip:"L'adresse de l'hôtel Kyoto en japonais est indispensable — copiez-la depuis le site de réservation. Le staff du konbini vous aide, c'est courant.",dur:"30 min"},
-{ti:"09:30",type:"t",n:"Métro → Tokyo Station (Shinkansen)",d:"Vous voyagez maintenant légers (1 petit sac chacun). 20 min.",dur:"20 min"},
-{ti:"09:50",type:"f",n:"Dernier petit-déjeuner Tokyo — Ekiben",d:"Achetez un ekiben (bento de gare) à Tokyo Station. Tradition japonaise : chaque région a son bento emblématique. Mangez dans le train.",dur:"20 min"},
-{ti:"10:10",type:"t",n:"🚄 Shinkansen Tokyo → Shin-Osaka",d:"Nozomi (non JR Pass) ou Hikari. 2h30. Côté D/E pour voir le Mont Fuji ~45 min après le départ.",tip:"Le Mont Fuji est visible côté droit (sièges D/E) en allant vers Osaka, par temps clair — profitez-en !",dur:"2h30"},
-{ti:"12:40",type:"t",n:"Shin-Osaka → Namba (Nankai Line)",d:"Correspondance Shin-Osaka → Osaka Namba. 15 min.",dur:"20 min"},
-{ti:"13:00",type:"f",n:"Déjeuner rapide — Namba",d:"Takoyaki ou okonomiyaki en 30 min dans Dotonbori. Premier contact avec Osaka.",dur:"35 min"},
-{ti:"13:35",type:"t",n:"Namba → Koyasan (Nankai Koya Line)",d:"Nankai Limited Express Kobō depuis Namba → Gokurakubashi (1h25) → Câble car (5 min) → Bus jusqu'au village (15 min). Total : ~2h. Le train traverse des gorges de plus en plus sauvages.",tip:"Achetez le Koyasan World Heritage Ticket (~2980¥ depuis Namba) : AR + câble car + bus illimités.",dur:"2h"},
-{ti:"15:35",type:"e",n:"Arrivée Koyasan — 1200 ans d'histoire",d:"Village entier de 117 temples à 900m d'altitude. Moines en robe, cloches, encens dans l'air froid. Temps d'une autre époque.",dur:"20 min"},
-{ti:"15:55",type:"ko",n:"🏯 Kongobu-ji — Temple central",d:"Jardin de pierres sèches Banryutei (le plus grand jardin de pierres du Japon), peintures murales Edo, salle des funérailles d'Hideyoshi.",dur:"1h"},
-{ti:"16:55",type:"ko",n:"Danjogaran — Pagode Konpon Daito",d:"Grande pagode rouge de 48m au centre du complexe sacré. Symbole de Koyasan. Entourée de cryptomères centenaires, éclairée au crépuscule.",dur:"30 min"},
-{ti:"17:25",type:"p",n:"Check-in Shukubo — Temple lodge",d:"Accueil traditionnel, yukata fourni, chambre tatami. Déposez vos sacs.",dur:"30 min"},
-{ti:"18:00",type:"f",n:"🍱 Dîner Shojin Ryori — Cuisine bouddhiste",d:"10+ plats sur plateau laqué servis dans votre chambre : tofu de sésame, légumes marinés 12 façons, soupe miso aux algues, riz. Goût délicat, présentation artistique. Une des expériences gastronomiques les plus uniques du Japon.",tip:"Aucun porc ni viande — 100% végétalien. Certains shukubo (Ekoin) ont un bar séparé pour ceux qui veulent boire.",dur:"1h30"},
-{ti:"19:30",type:"ko",n:"🌙 Okunoin Cemetery — De nuit (EXPÉRIENCE ABSOLUE)",d:"200 000 tombes et mausolées sur 2km dans une forêt de cryptomères millénaires, éclairés par des lanternes. Le silence est total. L'atmosphère est surnaturelle — sacrée, envoûtante, irréelle. Le tombeau de Kobo Daishi au fond est éclairé d'une lumière éternelle depuis 1200 ans.",tip:"Apportez une lampe torche (ou téléphone). Marchez lentement — les ombres des cryptomères sur les lanternes sont à couper le souffle.",dur:"1h30"},
-{ti:"21:00",type:"s",n:"Retour temple + Sommeil",d:"🛌 7h30. Demain aube à 6h.",dur:"7h30"},
+{ti:"08:00",type:"s",n:"Wake up — Last morning at the Airbnb",d:"7h of sleep."},
+{ti:"08:00",type:"p",n:"Wake up + Pack + Checkout",d:"Finalise luggage. Separate what you need for 1 night (Koyasan) from the rest. Check every corner of the Airbnb.",dur:"1h"},
+{ti:"09:00",type:"bag-action",n:"📦 TAKKYUBIN — Send suitcases at the konbini",d:"Carry the suitcases (3 or 4) to the nearest konbini. Say 'takkyubin onegaishimasu'. Fill in the labels with your Kyoto hotel address. Suitcases will be delivered tomorrow April 1st to your hotel.",tip:"The Kyoto hotel address in Japanese is essential — copy it from your booking confirmation. The konbini staff will help you, this is very common.",dur:"30 min"},
+{ti:"09:30",type:"t",n:"Metro → Tokyo Station (Shinkansen)",d:"You're now travelling light (1 small bag each). 20 min.",dur:"20 min"},
+{ti:"09:50",type:"f",n:"Last Tokyo breakfast — Ekiben",d:"Buy an ekiben (station bento) at Tokyo Station. Japanese tradition: each region has its signature bento. Eat on the train.",dur:"20 min"},
+{ti:"10:10",type:"t",n:"🚄 Shinkansen Tokyo → Shin-Osaka",d:"Nozomi (not JR Pass) or Hikari. 2h30. Seats D/E for Mt Fuji view ~45 min after departure.",tip:"Mt Fuji is visible on the right side (D/E seats) heading towards Osaka on a clear day — enjoy it!",dur:"2h30"},
+{ti:"12:40",type:"t",n:"Shin-Osaka → Namba (Nankai Line)",d:"Transfer Shin-Osaka → Osaka Namba. 15 min.",dur:"20 min"},
+{ti:"13:00",type:"f",n:"Quick lunch — Namba",d:"Takoyaki or okonomiyaki in 30 min in Dotonbori. First taste of Osaka.",dur:"35 min"},
+{ti:"13:35",type:"t",n:"Namba → Koyasan (Nankai Koya Line)",d:"Nankai Limited Express Kobō from Namba → Gokurakubashi (1h25) → Cable car (5 min) → Bus to the village (15 min). Total: ~2h. The train passes through increasingly wild gorges.",tip:"Buy the Koyasan World Heritage Ticket (~¥2980 from Namba): round-trip + cable car + unlimited buses.",dur:"2h"},
+{ti:"15:35",type:"e",n:"Arrival at Koyasan — 1200 years of history",d:"An entire village of 117 temples at 900m altitude. Monks in robes, bells, incense in the cold mountain air. Time seems to stand still.",dur:"20 min"},
+{ti:"15:55",type:"ko",n:"🏯 Kongobu-ji — Central Temple",d:"Banryutei dry stone garden (Japan's largest rock garden), Edo-period murals, Hideyoshi's funeral chamber.",dur:"1h"},
+{ti:"16:55",type:"ko",n:"Danjogaran — Konpon Daito Pagoda",d:"48m red pagoda at the heart of the sacred complex. Symbol of Koyasan. Surrounded by century-old cryptomeria trees, lit at dusk.",dur:"30 min"},
+{ti:"17:25",type:"p",n:"Check-in at Shukubo — Temple Lodge",d:"Traditional welcome, yukata provided, tatami room. Drop your bags.",dur:"30 min"},
+{ti:"18:00",type:"f",n:"🍱 Dinner — Shojin Ryori Buddhist Cuisine",d:"10+ dishes on lacquered trays served in your room: sesame tofu, pickled vegetables 12 ways, seaweed miso soup, rice. Delicate flavors, artistic presentation. One of the most unique gastronomic experiences in Japan.",tip:"No pork or meat — 100% vegan. Some shukubo (like Ekoin) have a separate bar area.",dur:"1h30"},
+{ti:"19:30",type:"ko",n:"🌙 Okunoin Cemetery — At Night (ABSOLUTE EXPERIENCE)",d:"200,000 graves and mausoleums over 2km in a forest of ancient cryptomeria trees, lit by stone lanterns. Total silence. The atmosphere is supernatural — sacred, enchanting, unreal. Kobo Daishi's mausoleum at the end has been lit by an eternal flame for 1,200 years.",tip:"Bring a torch (or phone light). Walk slowly — the shadows of the cryptomeria trees on the lanterns are breathtaking.",dur:"1h30"},
+{ti:"21:00",type:"s",n:"Return to temple + Sleep",d:"🛌 7h30. Tomorrow: dawn at Okunoin.",dur:"7h30"},
 ]},
 
-{id:"d7",nav:"1 Avr\n🌸 Kyoto",
-title:"Mercredi 1er avril — Koyasan aube → Osaka → Kyoto 🌸",
-loc:"Koyasan → Osaka → Kyoto (hôtel + valises)",
-wx:"☀️ 15–19°C",sk:"🌸🌸 KYOTO PLEINE FLORAISON !",
-bags:"light",bagNote:"🎒 Sacs légers depuis Koyasan → Arrivée Kyoto : 🧳×4 valises vous attendent à l'hôtel (livrées par Takkyubin).",
-badges:["Okunoin à l'aube","Brunch Osaka Dotonbori","Arrivée Kyoto","Kinkaku-ji + Ryoan-ji","Gion nuit"],
-alerts:[{t:"s",m:"🌸 Kyoto est en pleine floraison aujourd'hui. C'est le début du pic absolu (1–5 avril). Soleil prévu."},{t:"o",m:"✅ LOGISTIQUE : vos valises vous attendent à l'hôtel Kyoto livrées par Takkyubin. Check-in normal, récupérez tout."}],
+{id:"d7",nav:"Apr 1\n🌸 Kyoto",
+title:"Wednesday April 1 — Koyasan dawn → Osaka → Kyoto 🌸",
+loc:"Koyasan → Osaka → Kyoto (hotel + suitcases)",
+wx:"☀️ 15–19°C",sk:"🌸🌸 KYOTO FULL BLOOM!",
+bags:"light",bagNote:"🎒 Light bags from Koyasan → Arrive Kyoto: 🧳×4 suitcases waiting at the hotel (delivered by Takkyubin).",
+badges:["Okunoin at dawn","Osaka brunch Dotonbori","Kyoto arrival","Kinkaku-ji + Ryoan-ji","Gion night"],
+alerts:[{t:"s",m:"🌸 Kyoto is in full bloom today. This is the start of the absolute peak (April 1–5). Sun forecast."},{t:"o",m:"✅ LOGISTICS: your suitcases are waiting at the Kyoto hotel, delivered by Takkyubin. Normal check-in, collect everything."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit Shukubo",d:"Réveil naturel ou cloches du temple à l'aube."},
-{ti:"06:00",type:"ko",n:"🌅 Cérémonie matinale des moines (optionnelle)",d:"Certains shukubo proposent une cérémonie à 6h : chants bouddhistes dans une salle encensée au lever du jour. Si disponible, c'est une expérience rare.",dur:"1h"},
-{ti:"06:00",type:"ko",n:"🌲 Okunoin à l'aube — Moment le plus fort",d:"Le cimetière à 6h dans la brume. Lanternes encore allumées, cryptomères dans la brume, aucun touriste. Peut-être le moment le plus fort de tout le voyage.",tip:"Chaussures confortables pour la forêt humide du matin.",dur:"1h"},
-{ti:"07:00",type:"f",n:"Petit-déjeuner Shojin au shukubo",d:"Repas matinal bouddhiste : soupe miso, pickles, riz, tofu. Simple et nourrissant.",dur:"45 min"},
-{ti:"07:45",type:"p",n:"Checkout + Bagages (légers)",d:"Récupérez vos sacs. Remerciez les moines.",dur:"15 min"},
-{ti:"08:00",type:"t",n:"Bus → Câble car → Nankai → Namba",d:"Koyasan → Gokurakubashi (15 min bus) → Câble car (5 min) → Nankai Express → Namba Osaka (1h25). Arrivée Osaka ~10h15.",dur:"2h"},
-{ti:"10:15",type:"f",n:"Brunch Osaka — Dotonbori",d:"Takoyaki authentique, okonomiyaki Osaka-style, ou petit-déjeuner dans un kissaten local.",dur:"1h"},
-{ti:"11:15",type:"t",n:"Namba → Kyoto (JR ou Hankyu)",d:"JR depuis Shin-Osaka ou Hankyu depuis Namba. 50–75 min.",dur:"1h"},
-{ti:"12:15",type:"p",n:"✅ Check-in Hôtel Kyoto + Valises",d:"Vos 4 valises sont là, livrées par Takkyubin. Check-in, installez-vous. À partir d'ici : les valises restent à l'hôtel Kyoto pour tous les jours suivants.",dur:"30 min"},
-{ti:"12:45",type:"c",n:"Kinkaku-ji (Pavillon d'Or)",d:"Le pavillon recouvert de feuilles d'or reflété dans l'étang. Arrive tôt dans l'après-midi avant les cars de touristes. Les cerisiers commencent à fleurir autour de l'étang.",tip:"16h–17h est souvent plus calme que midi.",dur:"1h"},
-{ti:"13:45",type:"c",n:"Ryoan-ji — Jardin de pierres zen",d:"15 rochers dans un rectangle de gravier blanc. Le jardin le plus célèbre du monde. Personne n'a jamais percé son sens. Étang Kyoyochi avec cerisiers.",dur:"45 min"},
-{ti:"14:30",type:"t",n:"Bus → Gion",d:"Bus n°59 ou taxi. 20 min.",dur:"20 min"},
-{ti:"14:50",type:"sk",n:"🌸 Gion Shirakawa — Premier soir Kyoto",d:"Le canal de Gion bordé de maisons okiya et de cerisiers illuminés. L'image la plus iconique du Japon en ce moment. Marchez dans Hanamikoji après 17h.",tip:"Après 18h : chance d'apercevoir une maiko traversant la ruelle.",dur:"1h30"},
-{ti:"16:20",type:"sk",n:"🌸 Maruyama Park — Weeping Cherry",d:"Le grand cerisier pleureur illuminé de Maruyama = symbole du sakura de Kyoto. En pleine fleur.",dur:"45 min"},
-{ti:"17:05",type:"r",n:"Dîner — Pontocho",d:"Ruelle de 1km avec restaurants traditionnels en bois. Obanzai, yudofu, soba, kaiseki accessible. Ambiance unique.",dur:"1h30"},
-{ti:"18:35",type:"c",n:"Kiyomizudera — Illuminations nocturnes",d:"Terrasse en bois suspendue au-dessus de la ville illuminée. Vue sur les toits de Kyoto la nuit.",dur:"1h"},
-{ti:"19:35",type:"s",n:"Retour hôtel + Sommeil",d:"🛌 7h30.",dur:"7h30"},
+{ti:"—",type:"s",n:"Night at Shukubo",d:"Natural wake-up or temple bells at dawn."},
+{ti:"06:00",type:"ko",n:"🕯️ Morning Monk Ceremony (optional)",d:"Some shukubo offer a 6am ceremony: Buddhist chanting in an incense-filled hall at sunrise. If available, it's a rare experience.",dur:"1h"},
+{ti:"06:00",type:"ko",n:"🌲 Okunoin at Dawn — The Most Powerful Moment",d:"The cemetery at 6am in the mist. Lanterns still burning, cryptomeria trees in the haze, no tourists. Possibly the most powerful moment of the entire trip.",tip:"Comfortable shoes for the damp morning forest.",dur:"1h"},
+{ti:"07:00",type:"f",n:"Shojin Breakfast at the Shukubo",d:"Morning Buddhist meal: miso soup, pickles, rice, tofu. Simple and nourishing.",dur:"45 min"},
+{ti:"07:45",type:"p",n:"Checkout + Bags (light)",d:"Collect your bags. Thank the monks.",dur:"15 min"},
+{ti:"08:00",type:"t",n:"Bus → Cable car → Nankai → Namba",d:"Koyasan → Gokurakubashi (15 min bus) → Cable car (5 min) → Nankai Express → Namba Osaka (1h25). Arrive Osaka ~10:15.",dur:"2h"},
+{ti:"10:15",type:"f",n:"Brunch in Osaka — Dotonbori",d:"Authentic takoyaki, Osaka-style okonomiyaki, or breakfast at a local kissaten.",dur:"1h"},
+{ti:"11:15",type:"t",n:"Namba → Kyoto (JR or Hankyu)",d:"JR from Shin-Osaka or Hankyu from Namba. 50–75 min.",dur:"1h"},
+{ti:"12:15",type:"p",n:"✅ Kyoto Hotel Check-in + Suitcases",d:"Your 4 suitcases are here, delivered by Takkyubin. Check-in, settle in. From here: suitcases stay at the Kyoto hotel for all following days.",dur:"30 min"},
+{ti:"12:45",type:"c",n:"Kinkaku-ji (Golden Pavilion)",d:"The gold-leaf-covered pavilion reflected in the pond. Arrive early afternoon before tour buses. Cherry blossoms starting to bloom around the pond.",tip:"4pm–5pm is often calmer than midday.",dur:"1h"},
+{ti:"13:45",type:"c",n:"Ryoan-ji — Zen Stone Garden",d:"15 rocks in a rectangle of white gravel. The world's most famous garden. No one has ever fully deciphered its meaning. Kyoyochi Pond with cherry trees.",dur:"45 min"},
+{ti:"14:30",type:"t",n:"Bus → Gion",d:"Bus No.59 or taxi. 20 min.",dur:"20 min"},
+{ti:"14:50",type:"sk",n:"🌸 Gion Shirakawa — First Kyoto Evening",d:"Gion canal lined with okiya teahouses and illuminated cherry blossoms. The most iconic image in Japan right now. Walk through Hanamikoji after 5pm.",tip:"After 6pm: chance to spot a maiko crossing the alley.",dur:"1h30"},
+{ti:"16:20",type:"sk",n:"🌸 Maruyama Park — Weeping Cherry Tree",d:"The famous lit-up weeping cherry tree of Maruyama = the symbol of Kyoto's sakura. In full bloom.",dur:"45 min"},
+{ti:"17:05",type:"r",n:"Dinner — Pontocho",d:"1km alley with traditional wooden restaurants. Obanzai, yudofu, soba, accessible kaiseki. Unique atmosphere.",dur:"1h30"},
+{ti:"18:35",type:"c",n:"Kiyomizudera — Night illuminations",d:"The wooden stage suspended above the illuminated city. View over Kyoto's rooftops at night.",dur:"1h"},
+{ti:"19:35",type:"s",n:"Back to hotel + Sleep",d:"🛌 7h30.",dur:"7h30"},
 ]},
 
-{id:"d8",nav:"2 Avr\n💼 Kyoto",navClass:"wk",
-title:"Jeudi 2 avril — Kyoto : Arashiyama + Loutre + Osaka soirée + Travail 🦦",
-loc:"Kyoto + Osaka soirée",
+{id:"d8",nav:"Apr 2\n💼 Kyoto",navClass:"wk",
+title:"Thursday April 2 — Kyoto: Arashiyama + Otter Café + Osaka + Work 🦦",
+loc:"Kyoto + Osaka evening",
 wx:"☀️ 16–20°C",sk:"🌸🌸 Kyoto peak sakura",
-bags:"hotel",bagNote:"🏨 Valises sécurisées à l'hôtel Kyoto — vous partez légers toute la journée",
-badges:["Arashiyama + Bambouseraie cachée","Tenryu-ji sakura","🦦 Café Loutre","Osaka Dotonbori soirée","Travail 23h–03h"],
-alerts:[{t:"s",m:"🌸 Soleil et 20°C. Kyoto au sommet absolu."},{t:"b",m:"🦦 Loutre Kyoto : pas de réservation — se présenter directement. 259-1 Shikibucho, Nakagyo Ward (5 min de Nishiki Market). 2500¥/50 min. Cash uniquement. Ouverture ~13h. Min. 15 ans."},{t:"o",m:"💼 Travail ce soir : 23h–03h depuis l'hôtel."}],
+bags:"hotel",bagNote:"🏨 Suitcases safely stored at the Kyoto hotel — you go out light all day",
+badges:["Arashiyama + Hidden bamboo grove","Tenryu-ji sakura","🦦 Otter Café Loutre","Osaka Dotonbori evening","Work 11pm–3am"],
+alerts:[{t:"s",m:"🌸 Sunny and 20°C. Kyoto at its absolute peak."},{t:"b",m:"🦦 Loutre Otter Café: walk-in only — no reservations. Address: 259-1 Shikibucho, Nakagyo Ward (5 min from Nishiki Market). ¥2500/50 min. Cash only. Opens ~1pm. Min. age 15."},{t:"o",m:"💼 Work tonight: 11pm–3am from the hotel."}],
 blocks:[
-{ti:"09:45",type:"s",n:"Réveil",d:"7h de sommeil."},
-{ti:"09:45",type:"p",n:"Réveil + Préparation",d:"40 min.",dur:"40 min"},
-{ti:"10:25",type:"t",n:"JR San-in Line → Saga-Arashiyama",d:"Depuis Kyoto Station. 15 min.",dur:"15 min"},
-{ti:"10:40",type:"sk",n:"🌸 Tenryu-ji + Jardin impérial",d:"Jardin zen classé UNESCO avec étang reflétant les cerisiers en pleine fleur et les montagnes. L'un des plus beaux sites du Japon en ce moment. XIVème siècle.",tip:"Lumière matinale sur l'étang = exceptionnelle. 500¥ jardin, 1000¥ temple + jardin.",dur:"1h"},
-{ti:"11:40",type:"c",n:"🎋 Bambouseraie d'Arashiyama",d:"Forêt de bambous géants en voûte. Arrivez maintenant avant les foules de midi.",dur:"30 min"},
-{ti:"12:10",type:"e",n:"⛰️ Jojakko-ji — La bambouseraie cachée",d:"Grimpez le chemin derrière la bambouseraie principale jusqu'à Jojakko-ji. Le chemin traverse une forêt de bambous secondaire quasi déserte, plus sauvage et plus belle. Vue panoramique sur Kyoto. Moins de 1% des visiteurs d'Arashiyama le font.",tip:"C'est CE lieu dont les gens parlent quand ils disent 'la bambouseraie secrète de Kyoto'.",dur:"1h"},
-{ti:"13:10",type:"f",n:"Déjeuner — Arashiyama",d:"Soba aux tiges de bambou, tofu de Sagano, yudofu avec vue sur la rivière Ōi.",dur:"50 min"},
-{ti:"14:00",type:"t",n:"Bus → Centre Kyoto",d:"30 min.",dur:"30 min"},
-{ti:"14:30",type:"sh",n:"Nishiki Market — Dégustations",d:"Tsukemono, tamagoyaki, tofu frais, saké artisanal.",dur:"45 min"},
-{ti:"15:15",type:"ca",n:"🦦 Café Loutre (LOUTRE) — Kyoto",d:"Unique café à loutres de Kyoto. 5 loutres qui vivent avec leur propriétaire. Elles courent librement, grimpent sur les épaules, mangent dans votre main. Staff anglophone et passionné.",tip:"Les loutres sont plus actives en début de session.",dur:"1h15"},
-{ti:"16:30",type:"sk",n:"🌸 Gion — Lumière dorée",d:"La lumière de 16h dans les ruelles de Gion avec les cerisiers et les premières lanternes. Promenade libre.",dur:"1h"},
+{ti:"09:45",type:"s",n:"Wake up",d:"7h of sleep."},
+{ti:"09:45",type:"p",n:"Wake up + Get ready",d:"40 min.",dur:"40 min"},
+{ti:"10:25",type:"t",n:"JR San-in Line → Saga-Arashiyama",d:"From Kyoto Station. 15 min.",dur:"15 min"},
+{ti:"10:40",type:"sk",n:"🌸 Tenryu-ji + Imperial Garden",d:"UNESCO-listed Zen garden with a pond reflecting the fully bloomed cherry trees and mountains behind. One of Japan's most beautiful sites right now. 14th century.",tip:"Morning light on the pond = exceptional. ¥500 garden only, ¥1000 temple + garden.",dur:"1h"},
+{ti:"11:40",type:"c",n:"🎋 Arashiyama Bamboo Grove",d:"Towering bamboo forming an arched tunnel. Arrive now before the midday crowds.",dur:"30 min"},
+{ti:"12:10",type:"e",n:"⛰️ Jojakko-ji — The Hidden Bamboo Grove",d:"Climb the path behind the main bamboo grove up to Jojakko-ji. The path crosses a secondary, almost deserted bamboo forest — wilder and more beautiful. Panoramic view over Kyoto. Less than 1% of Arashiyama visitors discover this.",tip:"This is THE spot people are referring to when they talk about 'Kyoto's secret bamboo grove'.",dur:"1h"},
+{ti:"13:10",type:"f",n:"Lunch — Arashiyama",d:"Bamboo-shoot soba, Sagano tofu, yudofu with a view of the Ōi River.",dur:"50 min"},
+{ti:"14:00",type:"t",n:"Bus → Kyoto city centre",d:"30 min.",dur:"30 min"},
+{ti:"14:30",type:"sh",n:"Nishiki Market — Tastings",d:"Tsukemono pickles, tamagoyaki, fresh tofu, artisan sake.",dur:"45 min"},
+{ti:"15:15",type:"ca",n:"🦦 Loutre Otter Café — Kyoto",d:"Kyoto's only otter café. 5 otters that live with their owner. They run freely around the room, climb on your shoulders, eat from your hand. English-speaking staff.",tip:"Otters are most active at the start of the session.",dur:"1h15"},
+{ti:"16:30",type:"sk",n:"🌸 Gion — Golden hour",d:"The 4pm light in Gion's alleys with cherry blossoms and early lanterns. Free stroll.",dur:"1h"},
 {ti:"17:30",type:"t",n:"JR/Hankyu → Osaka Namba",d:"30 min.",dur:"30 min"},
-{ti:"18:00",type:"r",n:"🍜 Dîner Osaka — Spécialités",d:"Takoyaki authentique chez un spécialiste, okonomiyaki Osaka-style, ou kushikatsu (brochettes panées — tremper UNE SEULE FOIS dans la sauce, c'est la règle absolue).",tip:"Kushikatsu Daruma (fondé 1929) = référence absolue.",dur:"1h30"},
-{ti:"19:30",type:"sh",n:"Amerika-Mura + Shinsaibashi",d:"Amerika-Mura = le Shimokitazawa d'Osaka : friperies vintage, street art. Shinsaibashi : boutiques créateurs japonais.",dur:"1h15"},
-{ti:"20:45",type:"t",n:"Retour Kyoto",d:"JR ou Hankyu. 25–30 min. Arrivée ~21h30.",dur:"30 min"},
-{ti:"21:30",type:"f",n:"Snack de nuit",d:"Konbini ou ramen de nuit.",dur:"30 min"},
-{ti:"23:00",type:"w",n:"💼 TRAVAIL — 4 heures",d:"Depuis l'hôtel Kyoto.",dur:"4h"},
-{ti:"03:00",type:"s",n:"Sommeil",d:"🛌 7h — réveil 10h.",dur:"7h"},
+{ti:"18:00",type:"r",n:"🍜 Dinner Osaka — Local specialties",d:"Authentic takoyaki from a specialist, Osaka-style okonomiyaki, or kushikatsu (breaded skewers — dip ONLY ONCE in the sauce, that's the absolute rule).",tip:"Kushikatsu Daruma (founded 1929) = the ultimate reference.",dur:"1h30"},
+{ti:"19:30",type:"sh",n:"Amerika-Mura + Shinsaibashi",d:"Amerika-Mura = Osaka's version of Shimokitazawa: vintage shops, street art. Shinsaibashi: Japanese independent designer boutiques.",dur:"1h15"},
+{ti:"20:45",type:"t",n:"Back to Kyoto",d:"JR or Hankyu. 25–30 min. Arrive ~9:30pm.",dur:"30 min"},
+{ti:"21:30",type:"f",n:"Late night snack",d:"Konbini or late-night ramen.",dur:"30 min"},
+{ti:"23:00",type:"w",n:"💼 WORK — 4 hours",d:"From the Kyoto hotel.",dur:"4h"},
+{ti:"03:00",type:"s",n:"Sleep",d:"🛌 7h — wake up at 10am.",dur:"7h"},
 ]},
 
-{id:"d9",nav:"3 Avr\n🦌👘→Tokyo",navClass:"tr",
-title:"Jeudi 3 avril — Nara + Kimono Gion → Shinkansen → Tokyo 🏳️‍🌈",
+{id:"d9",nav:"Apr 3\n🦌👘→Tokyo",navClass:"tr",
+title:"Friday April 3 — Nara + Kimono Gion → Shinkansen → Tokyo 🏳️‍🌈",
 loc:"Kyoto → Nara → Kyoto → Tokyo",
 wx:"☀️ 16–20°C",sk:"🌸🌸 Kyoto + Nara sakura peak",
-bags:"hotel",bagNote:"🏨 Valises restent à l'hôtel Kyoto jusqu'à votre départ Shinkansen l'après-midi",
-badges:["Nara cerfs + temples","Grand Bouddha Todai-ji","👘 Kimono + Shooting Gion","Shinkansen → Tokyo","🏳️‍🌈 Ni-chome VENDREDI soir"],
-alerts:[{t:"s",m:"🌸 Soleil et 20°C — les sakura de Nara et Kyoto simultanément au sommet."},{t:"b",m:"👘 Kimono : réservez sur yumeyakata.com. Créneau 13h–16h pour la lumière d'après-midi dans Gion."},{t:"p",m:"🏳️‍🌈 C'est VENDREDI ce soir. Shinjuku Ni-chome ouvre jusqu'à 5h du matin."}],
+bags:"hotel",bagNote:"🏨 Suitcases stay at the Kyoto hotel until your Shinkansen departure this afternoon",
+badges:["Nara deer + temples","Todai-ji Great Buddha","👘 Kimono + Gion photoshoot","Shinkansen → Tokyo","🏳️‍🌈 Ni-chome FRIDAY night"],
+alerts:[{t:"s",m:"🌸 Sunny and 20°C — Nara and Kyoto cherry blossoms simultaneously at their peak."},{t:"b",m:"👘 Kimono: book at yumeyakata.com. Recommended slot: 1pm–4pm for the afternoon light in Gion."},{t:"p",m:"🏳️‍🌈 It's FRIDAY tonight. Shinjuku Ni-chome clubs are open until 5am."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit Hôtel Kyoto",d:"7h de sommeil."},
-{ti:"07:00",type:"p",n:"Réveil tôt",d:"40 min. Départ tôt pour Nara avant les foules.",dur:"40 min"},
-{ti:"07:40",type:"t",n:"JR Nara Line → Nara",d:"Depuis Kyoto Station. 45 min. JR Pass valide.",dur:"45 min"},
-{ti:"08:25",type:"e",n:"🦌 Kasuga Taisha + Nigatsu-do (tôt)",d:"Sanctuaire aux 3000 lanternes de bronze et terrasse panoramique sur les collines en fleur. Les cerfs vous accompagnent partout. Quasi aucun touriste à cette heure.",tip:"Shika senbei (crackers cerfs 150¥) — le cerf qui s'incline pour demander est mémorable.",dur:"1h30"},
-{ti:"09:55",type:"c",n:"⛩️ Todai-ji — Grand Bouddha 15m",d:"Plus grand bâtiment en bois du monde, Bouddha de bronze écrasant. Porte Nandaimon avec gardiens gigantesques. Passez dans le trou du pilier.",dur:"1h"},
-{ti:"10:55",type:"sk",n:"🌸 Nara Park — Cerfs + Cerisiers en fleur",d:"1300 cerfs en liberté parmi les fleurs roses. Image parmi les plus singulières au monde.",dur:"1h"},
-{ti:"11:55",type:"f",n:"Déjeuner Nara — Spécialités",d:"Kakinoha-zushi, soba de Yoshino, sofuto kurimu thé vert.",dur:"1h"},
-{ti:"12:55",type:"t",n:"JR retour → Kyoto",d:"45 min.",dur:"45 min"},
-{ti:"13:40",type:"t",n:"→ Boutique Kimono",d:"Taxi vers la boutique. 15 min.",dur:"15 min"},
-{ti:"13:55",type:"c",n:"👘 Shooting Kimono — Gion",d:"Habillage complet (kimono, obi, geta, coiffure) puis shooting dans les ruelles de Gion — Ninenzaka, Sannenzaka, Shirakawa — avec les cerisiers en fleur. La lumière d'après-midi dans Gion transforme tout en peinture.",tip:"Yumeyakata et Maiko Henshin Studio = références. 3000–6000¥/pers. ~3h au total.",dur:"3h"},
-{ti:"16:55",type:"sk",n:"🌸 Gion crépuscule en kimono",d:"Lumière dorée de 17h avec kimonos et cerisiers. Photos pour la vie.",dur:"1h"},
-{ti:"17:55",type:"t",n:"Hôtel → Récupération valises + Kyoto Station",d:"Taxi vers l'hôtel. Récupérez vos 4 valises. Direction Kyoto Station.",dur:"40 min"},
-{ti:"18:35",type:"t",n:"🚄 Shinkansen Kyoto → Tokyo",d:"Hikari ou Nozomi. 2h15–2h40.",tip:"Ekiben sakura de Kyoto pour manger dans le train.",dur:"2h30"},
-{ti:"21:05",type:"t",n:"Tokyo Station → Hôtel Tokyo",d:"Check-in hôtel Tokyo. Déposez les 4 valises.",dur:"30 min"},
-{ti:"21:35",type:"r",n:"Dîner rapide — Shinjuku",d:"Ramen, gyoza, ou izakaya rapide avant la soirée.",dur:"1h"},
-{ti:"22:35",type:"p",n:"Préparation soirée",d:"Tenues, énergie rechargée.",dur:"30 min"},
-{ti:"23:05",type:"g",n:"🏳️‍🌈 Shinjuku Ni-chome — Soirée vendredi",d:"Métro Shinjuku-Sanchome (sortie C8). Parcours : ① AiiRO Café (arche arc-en-ciel, terrasse, idéal pour débuter, happy hour) → ② Eagle Tokyo Blue (bar international le plus accueillant pour étrangers) → ③ Dragon Men (dancefloor, DJs, gogo dancers) → ④ Campy! (drag queen Bourbonne, très festif). +300 bars dans quelques rues.",tip:"Clubs ouverts jusqu'à 5h le vendredi. Dernier métro ~00:30, après = taxi 1500–2000¥.",dur:"4h+"},
+{ti:"—",type:"s",n:"Night at Kyoto Hotel",d:"7h of sleep."},
+{ti:"07:00",type:"p",n:"Early wake up",d:"40 min. Leave early for Nara before the crowds.",dur:"40 min"},
+{ti:"07:40",type:"t",n:"JR Nara Line → Nara",d:"From Kyoto Station. 45 min. JR Pass valid.",dur:"45 min"},
+{ti:"08:25",type:"e",n:"🦌 Kasuga Taisha + Nigatsu-do (early)",d:"Shrine with 3,000 bronze lanterns and hilltop terrace overlooking the cherry-blossomed hills. Deer everywhere. Almost no tourists at this hour.",tip:"Shika senbei (deer crackers ¥150) — a deer bowing to ask for food is unforgettable.",dur:"1h30"},
+{ti:"09:55",type:"c",n:"⛩️ Todai-ji — 15m Great Buddha",d:"The world's largest wooden building, housing an overwhelming bronze Buddha. Nandaimon Gate with giant guardian statues. Squeeze through the pillar hole (good luck charm).",dur:"1h"},
+{ti:"10:55",type:"sk",n:"🌸 Nara Park — Deer + Cherry Blossoms",d:"1,300 free-roaming deer among pink cherry blossoms. One of the most singular images in the world.",dur:"1h"},
+{ti:"11:55",type:"f",n:"Lunch Nara — Local specialties",d:"Kakinoha-zushi, Yoshino soba, green tea soft serve.",dur:"1h"},
+{ti:"12:55",type:"t",n:"JR back → Kyoto",d:"45 min.",dur:"45 min"},
+{ti:"13:40",type:"t",n:"→ Kimono Shop",d:"Taxi to the booked shop. 15 min.",dur:"15 min"},
+{ti:"13:55",type:"c",n:"👘 Kimono Photoshoot — Gion",d:"Full dressing (kimono, obi, geta sandals, hair) then photoshoot in Gion's alleys — Ninenzaka, Sannenzaka, Shirakawa — with cherry blossoms in bloom. The afternoon light in Gion turns everything into a painting.",tip:"Yumeyakata and Maiko Henshin Studio are the top references. ¥3000–6000/person. ~3h total.",dur:"3h"},
+{ti:"16:55",type:"sk",n:"🌸 Gion at dusk in kimono",d:"Golden light at 5pm with kimonos and cherry blossoms. Photos for a lifetime.",dur:"1h"},
+{ti:"17:55",type:"t",n:"Hotel → Collect suitcases → Kyoto Station",d:"Taxi to hotel. Collect your 4 suitcases. Head to Kyoto Station.",dur:"40 min"},
+{ti:"18:35",type:"t",n:"🚄 Shinkansen Kyoto → Tokyo",d:"Hikari or Nozomi. 2h15–2h40.",tip:"Buy a Kyoto sakura ekiben to eat on the train.",dur:"2h30"},
+{ti:"21:05",type:"t",n:"Tokyo Station → Tokyo Hotel",d:"Check-in. Drop all 4 suitcases.",dur:"30 min"},
+{ti:"21:35",type:"r",n:"Quick dinner — Shinjuku",d:"Ramen, gyoza, or izakaya before the night out.",dur:"1h"},
+{ti:"22:35",type:"p",n:"Get ready for the night",d:"Outfits, energy recharged.",dur:"30 min"},
+{ti:"23:05",type:"g",n:"🏳️‍🌈 Shinjuku Ni-chome — Friday Night",d:"Metro to Shinjuku-Sanchome (exit C8). Suggested route: ① AiiRO Café (rainbow torii arch terrace, ideal to start, happy hour) → ② Eagle Tokyo Blue (most welcoming international bar) → ③ Dragon Men (dancefloor, DJs, gogo dancers) → ④ Campy! (drag queen Bourbonne, very festive). 300+ bars in just a few streets.",tip:"Clubs open until 5am on Fridays. Last metro ~12:30am, after that = taxi ¥1500–2000.",dur:"4h+"},
 ]},
 
-{id:"d10",nav:"4 Avr\n🎋 Kamakura",
-title:"Samedi 4 avril — Kamakura : Forêt Bambou Hokokuji + Grand Bouddha 🎋",
+{id:"d10",nav:"Apr 4\n🎋 Kamakura",
+title:"Saturday April 4 — Kamakura: Hokokuji Bamboo + Great Buddha 🎋",
 loc:"Tokyo → Kamakura (day trip)",
-wx:"⛅ 14–18°C",sk:"🌸 Tokyo cerisiers tardifs",
-bags:"hotel",bagNote:"🏨 4 valises sécurisées à l'hôtel Tokyo — vous partez légers à Kamakura",
-badges:["🎋 Hokokuji bambou (moins connu)","Thé matcha dans la forêt","Grand Bouddha 13m","Plage Yuigahama"],
-alerts:[{t:"b",m:"🎋 Hokokuji = la forêt de bambou dont vous avez entendu parler. 2000 bambous, quasi personne. L'expérience matcha dans le pavillon en bois entouré de tiges est absolument unique."},{t:"w",m:"⚠️ Réveil tardif probable après Ni-chome — totalement intégré. Partez quand vous êtes prêts."}],
+wx:"⛅ 14–18°C",sk:"🌸 Late cherry blossoms in Tokyo",
+bags:"hotel",bagNote:"🏨 4 suitcases stored safely at Tokyo hotel — travel light to Kamakura",
+badges:["🎋 Hokokuji bamboo (lesser known)","Matcha tea in the bamboo grove","13m Great Buddha","Yuigahama Beach"],
+alerts:[{t:"b",m:"🎋 Hokokuji = the bamboo forest you heard about. 2,000 bamboo stalks, almost no one there. The matcha tea ceremony in the wooden pavilion surrounded by the grove is absolutely unique."},{t:"w",m:"⚠️ Likely late wake-up after Ni-chome — fully factored in. Leave when you're ready."}],
 blocks:[
-{ti:"—",type:"s",n:"Réveil tardif naturel",d:"Dormez autant que nécessaire après la soirée."},
-{ti:"10:00",type:"p",n:"Réveil + Brunch",d:"Café et brunch dans un café de quartier. Prenez votre temps.",dur:"1h"},
-{ti:"11:00",type:"t",n:"JR Yokosuka Line → Kamakura",d:"Depuis Shinjuku ou Tokyo Station. 1h10.",dur:"1h10"},
-{ti:"12:10",type:"t",n:"Bus → Jomyoji stop",d:"Bus n°鎌23, 24 ou 36 depuis Kamakura Station Est. 10 min, 220¥.",dur:"12 min"},
-{ti:"12:22",type:"e",n:"🎋 Hokokuji Temple — La bambouseraie secrète",d:"2000 bambous géants (moso) formant une cathédrale végétale. Sentiers étroits s'enfonçant dans la forêt. Lumière filtrée entre les tiges en rayons verts dorés. Sons : uniquement le vent et les oiseaux.",tip:"OBLIGATOIRE : achetez le ticket avec la cérémonie thé matcha (600¥ en plus = 1000¥ total). Assis dans le pavillon Kyukoan face à la forêt de bambous, matcha + wagashi. Le moment de paix absolu du voyage.",dur:"1h30"},
-{ti:"13:52",type:"f",n:"Déjeuner — Kamakura",d:"Soba, shirasu (petits poissons blancs — spécialité de Kamakura), ou restaurant de poisson frais.",dur:"1h"},
-{ti:"14:52",type:"c",n:"⛩️ Tsurugaoka Hachimangu",d:"Grand sanctuaire central de Kamakura. Allée de 2km depuis la mer, étangs avec lotus, escalier monumental. Cerisiers tardifs encore en fleur.",dur:"45 min"},
-{ti:"15:37",type:"c",n:"🗿 Grand Bouddha de Kamakura — 13m en plein air",d:"Bouddha de bronze depuis 1252, en plein air, entouré de pins. Entrez à l'intérieur (20¥). Très différent du Bouddha de Nara.",dur:"45 min"},
-{ti:"16:22",type:"e",n:"🌊 Yuigahama Beach — La mer !",d:"20 min à pied. La mer de Shonan avec les collines boisées derrière. Café de plage pour une pause. Vue sur Fuji par temps très clair.",dur:"1h"},
+{ti:"—",type:"s",n:"Natural late wake-up",d:"Sleep as long as you need after the night out."},
+{ti:"10:00",type:"p",n:"Wake up + Brunch",d:"Coffee and brunch at a neighbourhood café. Take your time.",dur:"1h"},
+{ti:"11:00",type:"t",n:"JR Yokosuka Line → Kamakura",d:"From Shinjuku or Tokyo Station. 1h10.",dur:"1h10"},
+{ti:"12:10",type:"t",n:"Bus → Jomyoji stop",d:"Bus No.鎌23, 24 or 36 from Kamakura Station East Exit. 10 min, ¥220.",dur:"12 min"},
+{ti:"12:22",type:"e",n:"🎋 Hokokuji Temple — The Secret Bamboo Grove",d:"2,000 giant moso bamboo stalks forming a cathedral of green. Narrow paths weaving into the forest. Light filters between the stalks in golden-green rays. Sounds: only wind and birdsong.",tip:"MUST DO: buy the ticket with the matcha tea ceremony (¥600 extra = ¥1000 total). Sit in the Kyukoan pavilion facing the bamboo forest, matcha + wagashi. The most peaceful moment of the entire trip.",dur:"1h30"},
+{ti:"13:52",type:"f",n:"Lunch — Kamakura",d:"Soba, shirasu (local tiny white fish specialty), or fresh fish restaurant.",dur:"1h"},
+{ti:"14:52",type:"c",n:"⛩️ Tsurugaoka Hachimangu",d:"Kamakura's great central shrine. 2km approach from the sea, lotus ponds, monumental staircase. Late cherry blossoms still in bloom.",dur:"45 min"},
+{ti:"15:37",type:"c",n:"🗿 Kamakura Great Buddha — 13m outdoors",d:"Bronze Buddha since 1252, outdoors, surrounded by pine trees. Enter inside (¥20). Very different from Nara's Buddha.",dur:"45 min"},
+{ti:"16:22",type:"e",n:"🌊 Yuigahama Beach — The sea!",d:"20 min walk. The Shonan sea with wooded hills behind. Beach café for a break. View of Mt Fuji on very clear days.",dur:"1h"},
 {ti:"17:22",type:"t",n:"JR → Tokyo",d:"1h10.",dur:"1h10"},
-{ti:"18:32",type:"sh",n:"Shopping Tokyo — Acquisitions finales",d:"Harajuku boutiques créateurs locaux, ou Shimokitazawa pour les friperies.",dur:"1h30"},
-{ti:"20:00",type:"r",n:"Dîner — Restaurant de qualité",d:"Wagyu beef japonais, sushi omakase, ou shabu-shabu.",dur:"1h30"},
-{ti:"21:30",type:"s",n:"Sommeil",d:"🛌 7h30. Demain : Yamagata.",dur:"7h30"},
+{ti:"18:32",type:"sh",n:"Tokyo shopping — Final purchases",d:"Harajuku local designer boutiques, or Shimokitazawa for vintage clothing.",dur:"1h30"},
+{ti:"20:00",type:"r",n:"Dinner — Quality restaurant",d:"Japanese wagyu beef, omakase sushi, or shabu-shabu.",dur:"1h30"},
+{ti:"21:30",type:"s",n:"Sleep",d:"🛌 7h30. Tomorrow: Yamagata.",dur:"7h30"},
 ]},
 
-{id:"d11",nav:"5 Avr\nDim →Yamagata",navClass:"tr",
-title:"Dimanche 5 avril — Tokyo → Yamagata (Tohoku) 🏔️",
+{id:"d11",nav:"Apr 5\nSun →Yamagata",navClass:"tr",
+title:"Sunday April 5 — Tokyo → Yamagata (Tohoku) 🏔️",
 loc:"Tokyo → Yamagata",
-wx:"⛅ 14–18°C",sk:"🌸 Tokyo derniers pétales",
-bags:"hotel",bagNote:"🏨 Laissez 3 ou 4 valises à l'hôtel Tokyo (service gratuit, sécurisé). Emportez 1 petit sac léger par personne pour 2 nuits à Yamagata.",
-badges:["Valises à l'hôtel Tokyo","Sacs légers → Yamagata","Kajo Park premiers sakura","Zao Onsen mixte"],
-alerts:[{t:"b",m:"🗺️ Yamagata : dépaysement total — Tohoku, quasi aucun touriste étranger. Shinkansen Max Yamabiko + Tsubasa depuis Tokyo : 2h40."},{t:"w",m:"🧳 LOGISTIQUE : informez votre hôtel Tokyo que vous laissez les valises et rentrez le 7 avril. Ils gardent tout gratuitement et en sécurité — c'est standard dans les hôtels japonais."}],
+wx:"⛅ 14–18°C",sk:"🌸 Last petals falling in Tokyo",
+bags:"hotel",bagNote:"🏨 Leave 3–4 suitcases at Tokyo hotel (free, secure service). Take 1 small overnight bag per person for 2 nights in Yamagata.",
+badges:["Suitcases stored at Tokyo hotel","Light bags → Yamagata","Kajo Park first sakura","Zao Onsen mixed baths"],
+alerts:[{t:"b",m:"🗺️ Yamagata: a complete change of scenery — Tohoku region, almost no foreign tourists. Shinkansen Max Yamabiko + Tsubasa from Tokyo: 2h40."},{t:"w",m:"🧳 LOGISTICS: tell your Tokyo hotel you're leaving suitcases and returning April 7th. They store everything free of charge and securely — completely standard at Japanese hotels."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit hôtel Tokyo",d:"7h de sommeil."},
-{ti:"08:30",type:"p",n:"Réveil + Préparation sacs légers",d:"Préparez un sac de 2 nuits par personne. Tout le reste = hôtel Tokyo.",dur:"40 min"},
-{ti:"09:10",type:"bag-action",n:"🏨 Dépôt valises à l'hôtel",d:"Déposez vos valises à la réception. Dites que vous rentrez le 7 avril soir. Service gratuit, valises sécurisées dans un espace dédié. Partez légers.",dur:"10 min"},
-{ti:"09:20",type:"t",n:"Tokyo Station → Shinkansen",d:"15 min de l'hôtel.",dur:"15 min"},
-{ti:"09:35",type:"t",n:"🚄 Shinkansen Tokyo → Yamagata",d:"Yamabiko + Tsubasa. ~2h40. Paysages Tohoku magnifiques — vallées, rivières, montagnes.",dur:"2h40"},
-{ti:"12:15",type:"t",n:"Yamagata Station → Hôtel",d:"Taxi ou bus. 10–15 min.",dur:"15 min"},
-{ti:"12:30",type:"f",n:"Déjeuner — Soba artisanal de Yamagata",d:"Spécialité locale : soba froids artisanaux. Restaurant traditionnel.",dur:"1h"},
-{ti:"13:30",type:"sk",n:"🌸 Kajo Park — Château + Premiers sakura",d:"1500 cerisiers dans les ruines du château. Début avril : premières fleurs ouvertes, certains arbres en pleine floraison. Très peu de touristes étrangers.",tip:"Les illuminations nocturnes commencent dès les premières fleurs ouvertes : 18h–22h.",dur:"2h"},
-{ti:"15:30",type:"e",n:"Yamagata — Artisans fonte",d:"Yamagata est mondialement reconnue pour sa fonte artisanale. Boutiques d'artisans dans la ville historique.",dur:"1h30"},
-{ti:"17:00",type:"t",n:"Bus → Zao Onsen",d:"45 min depuis Yamagata Station.",dur:"45 min"},
-{ti:"17:45",type:"c",n:"♨️ Zao Onsen — Bains mixtes sulfureux",d:"Zao Dai-Rotenburo : grand bain extérieur mixte (konyoku). L'eau est soufrée blanche-turquoise, unique au monde. ~42°C. Vue montagne. Maillot de bain recommandé dans la zone mixte.",tip:"Entrée ~800¥. L'eau laisse les cheveux secs — shampoing après.",dur:"1h30"},
-{ti:"19:15",type:"r",n:"Dîner — Zao Onsen",d:"Yakiniku, soba chaud de montagne, ragoût de légumes locaux.",dur:"1h30"},
-{ti:"20:45",type:"t",n:"Bus retour → Yamagata",d:"Dernier bus ~21h. 45 min.",dur:"45 min"},
-{ti:"21:30",type:"s",n:"Sommeil hôtel Yamagata",d:"🛌 7h.",dur:"7h"},
+{ti:"—",type:"s",n:"Night at Tokyo hotel",d:"7h of sleep."},
+{ti:"08:30",type:"p",n:"Wake up + Pack light bags",d:"Prepare a 2-night bag per person. Everything else stays at the Tokyo hotel.",dur:"40 min"},
+{ti:"09:10",type:"bag-action",n:"🏨 Drop suitcases at hotel reception",d:"Hand your suitcases to the front desk. Say you'll be back on the evening of April 7th. Free service, stored in a secure dedicated space. Travel light.",dur:"10 min"},
+{ti:"09:20",type:"t",n:"Tokyo Station → Shinkansen",d:"15 min from the hotel.",dur:"15 min"},
+{ti:"09:35",type:"t",n:"🚄 Shinkansen Tokyo → Yamagata",d:"Yamabiko + Tsubasa. ~2h40. Beautiful Tohoku scenery — valleys, rivers, mountains.",dur:"2h40"},
+{ti:"12:15",type:"t",n:"Yamagata Station → Hotel",d:"Taxi or bus. 10–15 min.",dur:"15 min"},
+{ti:"12:30",type:"f",n:"Lunch — Yamagata artisan soba",d:"Local specialty: handcrafted cold soba noodles. Traditional restaurant.",dur:"1h"},
+{ti:"13:30",type:"sk",n:"🌸 Kajo Park — Castle ruins + First sakura",d:"1,500 cherry trees in the ruins of Yamagata Castle. Early April: first blooms open, some trees already in full flower. Very few foreign tourists.",tip:"Night illuminations start as soon as the first flowers open: 6pm–10pm.",dur:"2h"},
+{ti:"15:30",type:"e",n:"Yamagata — Ironwork artisans",d:"Yamagata is world-renowned for its traditional ironwork casting. Artisan shops in the historic city.",dur:"1h30"},
+{ti:"17:00",type:"t",n:"Bus → Zao Onsen",d:"45 min from Yamagata Station.",dur:"45 min"},
+{ti:"17:45",type:"c",n:"♨️ Zao Onsen — Sulphurous mixed baths",d:"Zao Dai-Rotenburo: large outdoor mixed-gender bath (konyoku). The water is sulphurous milky turquoise — unique in the world. ~42°C. Mountain views. Swimwear recommended in the mixed area.",tip:"Entry ~¥800. Water leaves hair dry — shampoo afterwards.",dur:"1h30"},
+{ti:"19:15",type:"r",n:"Dinner — Zao Onsen",d:"Yakiniku, hot mountain soba, local vegetable stew.",dur:"1h30"},
+{ti:"20:45",type:"t",n:"Bus back → Yamagata",d:"Last bus ~9pm. 45 min.",dur:"45 min"},
+{ti:"21:30",type:"s",n:"Sleep at Yamagata hotel",d:"🛌 7h.",dur:"7h"},
 ]},
 
-{id:"d12",nav:"6 Avr\n💼 Yamagata",navClass:"wk",
-title:"Lundi 6 avril — Yamagata + Tendo + Kajo Park illuminé + Travail 💼",
+{id:"d12",nav:"Apr 6\n💼 Yamagata",navClass:"wk",
+title:"Monday April 6 — Yamagata + Tendo + Kajo Park lit up + Work 💼",
 loc:"Yamagata + Tendo",
-wx:"🌤️ 13–17°C",sk:"🌸 Yamagata sakura en cours",
-bags:"hotel",bagNote:"🏨 Sacs légers à l'hôtel Yamagata + 4 valises sécurisées à l'hôtel Tokyo",
-badges:["Tendo capitale du shogi","Artisans pièces en bois","Kajo Park illuminations","Travail 22h–02h"],
-alerts:[{t:"o",m:"💼 Travail 22h–02h depuis l'hôtel. Journée entièrement libre."},{t:"b",m:"🎎 Tendo produit 95% du shogi mondial. Artisans sculptant les pièces en bois de cerisier — savoir-faire classé patrimoine."}],
+wx:"🌤️ 13–17°C",sk:"🌸 Yamagata sakura underway",
+bags:"hotel",bagNote:"🏨 Light bags at Yamagata hotel + 4 suitcases stored safely at Tokyo hotel",
+badges:["Tendo — shogi capital","Woodcarving artisans","Kajo Park illuminations","Work 10pm–2am"],
+alerts:[{t:"o",m:"💼 Work 10pm–2am from the hotel. Full day completely free."},{t:"b",m:"🎎 Tendo produces 95% of the world's shogi pieces. Artisans hand-carving pieces from cherry wood — a heritage craft."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit Yamagata",d:"7h de sommeil."},
-{ti:"08:30",type:"p",n:"Réveil",d:"40 min.",dur:"40 min"},
-{ti:"09:10",type:"t",n:"JR → Tendo (20 min)",d:"JR Ou-Line. 20 min, 230¥.",dur:"20 min"},
-{ti:"09:30",type:"e",n:"🎎 Tendo — Artisans Shogi",d:"Ateliers de fabrication de pièces de shogi en bois de cerisier — sculpteurs à la main depuis des siècles. Certains ateliers sont ouverts aux visiteurs.",dur:"1h30"},
-{ti:"11:00",type:"sk",n:"🌸 Tendo Park — Sakura + Mt Maizuru",d:"2000 cerisiers. Les sakura de Tendo sont légèrement plus précoces que Yamagata.",dur:"1h"},
-{ti:"12:00",type:"t",n:"JR retour → Yamagata",d:"20 min.",dur:"20 min"},
-{ti:"12:20",type:"f",n:"Déjeuner — Wagyu de Yamagata",d:"Bœuf wagyu local ou imoni (ragoût taro + bœuf). Spécialités régionales.",dur:"1h"},
-{ti:"13:20",type:"sk",n:"🌸 Kajo Park — Après-midi",d:"Plus de fleurs ouvertes qu'hier. Vue sur les douves du château.",dur:"2h"},
-{ti:"15:20",type:"e",n:"Musée d'Art de Yamagata",d:"Collection japonaise et internationale dans un bâtiment Taisho restauré.",dur:"1h30"},
-{ti:"16:50",type:"f",n:"Café local — Pâtisseries aux cerises",d:"Yamagata est célèbre pour ses cerises (fruits). Sakura mochi, gâteaux locaux.",dur:"45 min"},
-{ti:"17:35",type:"sk",n:"🌸 Kajo Park — Illuminations nocturnes",d:"De 18h à 22h : cerisiers illuminés reflétés dans les douves du château. Très local, aucun touriste étranger. Atmosphère authentique.",dur:"2h"},
-{ti:"19:35",type:"r",n:"Dîner — Yamagata",d:"Fruits de mer Tohoku, soba, yonezawa beef si budget.",dur:"1h30"},
-{ti:"21:05",type:"p",n:"Retour hôtel + Préparation travail",d:"Thé vert chaud.",dur:"55 min"},
-{ti:"22:00",type:"w",n:"💼 TRAVAIL — 4 heures",d:"Depuis l'hôtel Yamagata.",dur:"4h"},
-{ti:"02:00",type:"s",n:"Sommeil",d:"🛌 7h — réveil 9h.",dur:"7h"},
+{ti:"—",type:"s",n:"Night in Yamagata",d:"7h of sleep."},
+{ti:"08:30",type:"p",n:"Wake up",d:"40 min.",dur:"40 min"},
+{ti:"09:10",type:"t",n:"JR → Tendo (20 min)",d:"JR Ou-Line. 20 min, ¥230.",dur:"20 min"},
+{ti:"09:30",type:"e",n:"🎎 Tendo — Shogi Artisans",d:"Workshops making shogi pieces from cherry wood — hand-carved for centuries. Some workshops are open to visitors.",dur:"1h30"},
+{ti:"11:00",type:"sk",n:"🌸 Tendo Park — Sakura + Mt Maizuru",d:"2,000 cherry trees. Tendo's sakura bloom slightly earlier than Yamagata.",dur:"1h"},
+{ti:"12:00",type:"t",n:"JR back → Yamagata",d:"20 min.",dur:"20 min"},
+{ti:"12:20",type:"f",n:"Lunch — Yamagata Wagyu",d:"Local wagyu beef or imoni (taro + beef stew). Regional specialties.",dur:"1h"},
+{ti:"13:20",type:"sk",n:"🌸 Kajo Park — Afternoon",d:"More flowers open than yesterday. Views over the castle moat.",dur:"2h"},
+{ti:"15:20",type:"e",n:"Yamagata Museum of Art",d:"Japanese and international collection in a restored Taisho-era building.",dur:"1h30"},
+{ti:"16:50",type:"f",n:"Local café — Cherry pastries",d:"Yamagata is famous for its cherries (fruit). Sakura mochi, local cakes.",dur:"45 min"},
+{ti:"17:35",type:"sk",n:"🌸 Kajo Park — Night illuminations",d:"6pm–10pm: illuminated cherry trees reflected in the castle moat. Very local, zero foreign tourists. Authentic atmosphere.",dur:"2h"},
+{ti:"19:35",type:"r",n:"Dinner — Yamagata",d:"Tohoku seafood, soba, yonezawa beef if budget allows.",dur:"1h30"},
+{ti:"21:05",type:"p",n:"Back to hotel + Work prep",d:"Hot green tea.",dur:"55 min"},
+{ti:"22:00",type:"w",n:"💼 WORK — 4 hours",d:"From the Yamagata hotel.",dur:"4h"},
+{ti:"02:00",type:"s",n:"Sleep",d:"🛌 7h — wake up 9am.",dur:"7h"},
 ]},
 
-{id:"d13",nav:"7 Avr\n💼 →Tokyo",navClass:"wk",
-title:"Mardi 7 avril — Yamagata → Sendai → Retour Tokyo 🥩",
+{id:"d13",nav:"Apr 7\n💼 →Tokyo",navClass:"wk",
+title:"Tuesday April 7 — Yamagata → Sendai → Return to Tokyo 🥩",
 loc:"Yamagata → Sendai → Tokyo",
-wx:"🌤️ 14–19°C",sk:"🌸 Sendai sakura en début",
-bags:"light",bagNote:"🎒 Sacs légers depuis Yamagata → Récupérez vos 4 valises à l'hôtel Tokyo en arrivant",
-badges:["JR Senzan Line (paysages)","Sendai stop","🥩 Gyutan OBLIGATOIRE","Retour Tokyo + valises"],
-alerts:[{t:"b",m:"🥩 Gyutan = langue de bœuf grillée finement, spécialité de Sendai depuis 1948. Rikyu ou Tentanki. À ne pas rater — c'est une des meilleures spécialités régionales du Japon."},{t:"o",m:"💼 Travail ce soir. Proposition : 22h–02h depuis l'hôtel Tokyo."}],
+wx:"🌤️ 14–19°C",sk:"🌸 Sendai sakura starting",
+bags:"light",bagNote:"🎒 Light bags from Yamagata → Collect your 4 suitcases at the Tokyo hotel on arrival",
+badges:["JR Senzan Line (scenic)","Sendai stop","🥩 Gyutan MANDATORY","Return to Tokyo + suitcases"],
+alerts:[{t:"b",m:"🥩 Gyutan = thinly sliced grilled beef tongue, Sendai's specialty since 1948. Rikyu or Tentanki. Don't skip this — one of the best regional specialties in Japan."},{t:"o",m:"💼 Work tonight. Suggestion: 10pm–2am from the Tokyo hotel."}],
 blocks:[
-{ti:"09:00",type:"s",n:"Réveil",d:"7h de sommeil."},
-{ti:"09:00",type:"p",n:"Réveil + Checkout Yamagata",d:"40 min.",dur:"40 min"},
-{ti:"09:40",type:"t",n:"JR Senzan Line → Sendai",d:"1h10 à travers les gorges et montagnes. Un des plus beaux trajets JR du Tohoku.",dur:"1h10"},
-{ti:"10:50",type:"e",n:"Sendai — Château Aoba",d:"Ruines du château d'Aoba sur la colline, vue panoramique. Statue de Date Masamune 'le dragon à un œil'.",dur:"1h"},
-{ti:"11:50",type:"r",n:"🥩 Gyutan — Déjeuner OBLIGATOIRE",d:"Langue de bœuf grillée finement tranchée + riz à l'orge + soupe de queue de bœuf. Restaurants spécialisés depuis les années 1950. Rikyu et Tentanki = références absolues.",tip:"'Gyutan setto' : 6–8 tranches, riz orge, soupe queue de bœuf, pickles. Budget 1800–2500¥.",dur:"1h"},
-{ti:"12:50",type:"t",n:"🚄 Shinkansen Sendai → Tokyo",d:"Hayabusa ou Yamabiko. 1h30.",dur:"1h30"},
-{ti:"14:20",type:"p",n:"✅ Hôtel Tokyo — Récupération des 4 valises",d:"Retrouvez vos valises à la réception. Elles ont été gardées en sécurité. Installez-vous.",dur:"30 min"},
-{ti:"14:50",type:"sh",n:"Derniers achats Tokyo",d:"Tokyo Character Street (Tokyo Station B1F), Tokyu Hands, Harajuku locaux.",dur:"2h"},
-{ti:"16:50",type:"e",n:"Shinjuku Golden Gai — Repérage",d:"200 micro-bars thématiques (jazz, cinéma, manga). Repérez vos bars pour une soirée possible ce soir.",dur:"1h"},
-{ti:"17:50",type:"r",n:"Dîner — Izakaya mémorable",d:"Izakaya de quartier ou restaurant que vous vouliez retester.",dur:"1h30"},
-{ti:"19:20",type:"e",n:"Soirée — Shibuya ou Golden Gai",d:"Shibuya Crossing de nuit, ou verre dans un micro-bar de Golden Gai.",dur:"2h"},
-{ti:"22:00",type:"w",n:"💼 TRAVAIL — 4 heures",d:"Depuis l'hôtel Tokyo.",dur:"4h"},
-{ti:"02:00",type:"s",n:"Sommeil",d:"🛌 7h — réveil 9h.",dur:"7h"},
+{ti:"09:00",type:"s",n:"Wake up",d:"7h of sleep."},
+{ti:"09:00",type:"p",n:"Wake up + Yamagata checkout",d:"40 min.",dur:"40 min"},
+{ti:"09:40",type:"t",n:"JR Senzan Line → Sendai",d:"1h10 through gorges and mountains. One of the most scenic JR routes in Tohoku.",dur:"1h10"},
+{ti:"10:50",type:"e",n:"Sendai — Aoba Castle",d:"Castle ruins on the hill, panoramic view. Statue of Date Masamune 'the one-eyed dragon'.",dur:"1h"},
+{ti:"11:50",type:"r",n:"🥩 Gyutan Lunch — MANDATORY",d:"Thinly sliced grilled beef tongue + barley rice + oxtail soup. Specialist restaurants since the 1950s. Rikyu and Tentanki are the absolute references.",tip:"'Gyutan setto': 6–8 slices, barley rice, oxtail soup, pickles. Budget ¥1800–2500.",dur:"1h"},
+{ti:"12:50",type:"t",n:"🚄 Shinkansen Sendai → Tokyo",d:"Hayabusa or Yamabiko. 1h30.",dur:"1h30"},
+{ti:"14:20",type:"p",n:"✅ Tokyo Hotel — Collect all 4 suitcases",d:"Find your suitcases at the front desk. Safely stored. Settle back in.",dur:"30 min"},
+{ti:"14:50",type:"sh",n:"Final Tokyo shopping",d:"Tokyo Character Street (Tokyo Station B1F), Tokyu Hands, Harajuku local shops.",dur:"2h"},
+{ti:"16:50",type:"e",n:"Shinjuku Golden Gai — Scouting",d:"200 thematic micro-bars (jazz, cinema, manga). Scope out your favourite bars for a possible evening here.",dur:"1h"},
+{ti:"17:50",type:"r",n:"Dinner — Memorable izakaya",d:"Neighbourhood izakaya or a restaurant you want to try again.",dur:"1h30"},
+{ti:"19:20",type:"e",n:"Evening — Shibuya or Golden Gai",d:"Shibuya Crossing at night, or a drink in a Golden Gai micro-bar.",dur:"2h"},
+{ti:"22:00",type:"w",n:"💼 WORK — 4 hours",d:"From the Tokyo hotel.",dur:"4h"},
+{ti:"02:00",type:"s",n:"Sleep",d:"🛌 7h — wake up 9am.",dur:"7h"},
 ]},
 
-{id:"d14",nav:"8 Avr\n🌧️ Tokyo",
-title:"Mercredi 8 avril — Tokyo intérieur (pluie prévue) 🌧️",
+{id:"d14",nav:"Apr 8\n🌧️ Tokyo",
+title:"Wednesday April 8 — Indoor Tokyo (rain forecast) 🌧️",
 loc:"Tokyo",
-wx:"🌧️ 14–17°C — Risque pluie élevé",sk:"☘️ Fin sakura",
-bags:"hotel",bagNote:"🏨 4 valises à l'hôtel Tokyo — journée 100% intérieure",
-badges:["Mori Art Museum Roppongi","Depachika sous grand magasin","Souvenirs finaux","Shinjuku Golden Gai soirée"],
-alerts:[{t:"r",m:"🌧️ Risque de pluie le plus élevé du voyage — programme 100% intérieur. Parfait pour les musées et les derniers achats."}],
+wx:"🌧️ 14–17°C — High rain risk",sk:"☘️ End of sakura season",
+bags:"hotel",bagNote:"🏨 4 suitcases at the Tokyo hotel — 100% indoor day",
+badges:["Mori Art Museum Roppongi","Depachika food hall under department store","Final souvenirs","Shinjuku Golden Gai evening"],
+alerts:[{t:"r",m:"🌧️ Highest rain risk of the trip — 100% indoor programme. Perfect for museums and last-minute shopping."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit",d:"7h de sommeil."},
-{ti:"09:00",type:"p",n:"Réveil + Brunch",d:"Kissaten japonais : morning set (toast épais, œuf, café).",dur:"1h"},
-{ti:"10:00",type:"c",n:"Mori Art Museum — Roppongi Hills",d:"53ème étage : exposition d'art contemporain international + Tokyo City View 360°. Une des meilleures collections d'art contemporain d'Asie.",dur:"2h"},
-{ti:"12:00",type:"f",n:"Déjeuner — Roppongi",d:"Restaurants variés autour de Roppongi Hills.",dur:"1h"},
-{ti:"13:00",type:"sh",n:"Depachika — Sous-sol grand magasin",d:"Isetan Shinjuku ou Takashimaya Times Square : 2–3 étages de nourriture premium japonaise. Wagashi, sushi, yakitori premium, pâtisserie franco-japonaise. Dégustations gratuites partout. L'une des expériences gastronomiques les plus denses du monde.",tip:"Dernier moment pour acheter des cadeaux gastronomiques premium : thé matcha, saké artisanal, confiseries.",dur:"2h"},
-{ti:"15:00",type:"sh",n:"Tokyo Character Street (Tokyo Station B1F)",d:"Boutiques officielles Ghibli, Pokémon, Sanrio, Shinkansen. Derniers cadeaux.",dur:"1h"},
-{ti:"16:00",type:"sh",n:"Don Quijote ou Konbini — Snacks avion",d:"Kit-Kat japonais (30+ parfums), chips uniques, Pocky, onigiri pour l'avion.",dur:"1h"},
-{ti:"17:00",type:"r",n:"Dîner — Avant-dernier soir",d:"Unagi (anguille laquée sur riz), tonkatsu premium, ou sukiyaki (bœuf fondue japonaise).",dur:"1h30"},
-{ti:"18:30",type:"e",n:"Shinjuku Golden Gai",d:"Plongez dans un micro-bar au hasard. Chacun a son thème : jazz, cinéma, manga, metal. Cover 500–1000¥. Les habitués japonais adorent les touristes curieux.",dur:"2h30"},
-{ti:"21:00",type:"s",n:"Sommeil",d:"🛌 7h30.",dur:"7h30"},
+{ti:"—",type:"s",n:"Night",d:"7h of sleep."},
+{ti:"09:00",type:"p",n:"Wake up + Brunch",d:"Japanese kissaten: morning set (thick toast, egg, coffee).",dur:"1h"},
+{ti:"10:00",type:"c",n:"Mori Art Museum — Roppongi Hills",d:"53rd floor: international contemporary art exhibition + 360° Tokyo City View. One of Asia's best contemporary art collections.",dur:"2h"},
+{ti:"12:00",type:"f",n:"Lunch — Roppongi",d:"Varied restaurants around Roppongi Hills.",dur:"1h"},
+{ti:"13:00",type:"sh",n:"Depachika — Department store food hall",d:"Isetan Shinjuku or Takashimaya Times Square: 2–3 floors of premium Japanese food. Wagashi, sushi, premium yakitori, Franco-Japanese pastry. Free tastings everywhere. One of the most dense gastronomic experiences in the world.",tip:"Last chance for premium food gifts: matcha tea, artisan sake, confectionery.",dur:"2h"},
+{ti:"15:00",type:"sh",n:"Tokyo Character Street (Tokyo Station B1F)",d:"Official Ghibli, Pokémon, Sanrio, Shinkansen shops. Last souvenirs.",dur:"1h"},
+{ti:"16:00",type:"sh",n:"Don Quijote or Konbini — Plane snacks",d:"Japanese Kit-Kat (30+ flavours), unique crisps, Pocky, onigiri for the plane.",dur:"1h"},
+{ti:"17:00",type:"r",n:"Dinner — Second to last evening",d:"Unagi (lacquered eel on rice), premium tonkatsu, or sukiyaki (Japanese beef fondue).",dur:"1h30"},
+{ti:"18:30",type:"e",n:"Shinjuku Golden Gai",d:"Dive into a random micro-bar. Each has its theme: jazz, cinema, manga, metal. Cover ¥500–1000. Japanese regulars love curious tourists.",dur:"2h30"},
+{ti:"21:00",type:"s",n:"Sleep",d:"🛌 7h30.",dur:"7h30"},
 ]},
 
-{id:"d15",nav:"9 Avr\nDernier jour",
-title:"Jeudi 9 avril — Dernier jour Tokyo 🗼",
+{id:"d15",nav:"Apr 9\nLast Day",
+title:"Thursday April 9 — Last Day in Tokyo 🗼",
 loc:"Tokyo",
-wx:"☀️ 15–19°C",sk:"☘️ Printemps tardif",
-bags:"full",bagNote:"🧳×4 avec vous — préparez les valises CE SOIR pour le vol de demain",
-badges:["Hamarikyu Garden","Shibuya Sky observation","Dîner d'adieu","Valises finales"],
-alerts:[{t:"w",m:"🧳 Préparez les valises CE SOIR sans faute. Vol demain 10 avril. Calculez votre réveil : Narita Express 1h30 + arrivée 3h avant le vol / Haneda monorail 30 min + arrivée 2h30 avant le vol."}],
+wx:"☀️ 15–19°C",sk:"☘️ Late spring",
+bags:"full",bagNote:"🧳×4 with you — pack the suitcases TONIGHT for tomorrow's flight",
+badges:["Hamarikyu Garden","Shibuya Sky observation deck","Farewell dinner","Final packing"],
+alerts:[{t:"w",m:"🧳 Pack your suitcases TONIGHT without fail. Flight tomorrow April 10th. Calculate your wake-up: Narita Express 1h30 + arrive 3h before flight / Haneda monorail 30 min + arrive 2h30 before flight."}],
 blocks:[
-{ti:"—",type:"s",n:"Nuit",d:"7h30 de sommeil."},
-{ti:"08:30",type:"p",n:"Réveil + Dernier petit-déjeuner au Japon",d:"Morning set dans un kissaten ou hôtel. Dernier café japonais.",dur:"1h"},
-{ti:"09:30",type:"e",n:"Hamarikyu Garden — Jardin de samouraï à la baie",d:"Ancien terrain de chasse des shoguns Tokugawa, 250 ans d'histoire. Étang d'eau salée (la marée le fait monter et descendre). Cerisiers tardifs encore présents. Vue sur les gratte-ciels de Shiodome — contraste saisissant.",tip:"Prenez le bateau Sumida River jusqu'à Asakusa (1000¥) — vue unique sur Tokyo depuis l'eau.",dur:"1h30"},
-{ti:"11:00",type:"e",n:"Asakusa — Dernier tour",d:"Senso-ji, Nakamise. Dernier souvenir du Tokyo traditionnel.",dur:"1h"},
-{ti:"12:00",type:"r",n:"Déjeuner final — Un plat pas encore goûté",d:"Chirashi bowl (sushi sur riz), eel unagi laqué, ou tempura légère en set.",dur:"1h"},
-{ti:"13:00",type:"sh",n:"Derniers achats / Oublis",d:"Une dernière session. Konbini : onigiri et snacks pour l'avion.",dur:"1h30"},
-{ti:"14:30",type:"ca",n:"Café d'adieu — Le meilleur du voyage",d:"Retournez dans le café que vous avez préféré. Moment de contemplation sur ces 15 jours.",dur:"1h"},
-{ti:"15:30",type:"e",n:"Shibuya Sky — Vue finale panoramique",d:"Toit ouvert à 230m, vue 360° sur l'océan de gratte-ciels à perte de vue, Fuji par temps clair. La synthèse visuelle de tout le voyage.",tip:"Réservation conseillée en ligne (2000¥). La lumière de 16h est magnifique.",dur:"1h30"},
-{ti:"17:00",type:"p",n:"Hôtel — Valises finales",d:"Finalisez les 4 valises. Passeport, boarding pass, chargeurs, cash restant, poids des bagages.",dur:"2h"},
-{ti:"19:00",type:"r",n:"🍽️ Dîner d'adieu — Le meilleur repas",d:"LE dernier dîner au Japon. Omakase sushi (chef choisit tout, 8000–15000¥), kaiseki de saison, ou l'izakaya la plus mémorable du voyage.",dur:"2h"},
-{ti:"21:00",type:"e",n:"Dernière balade de nuit",d:"Shinjuku ou Shibuya. Absorbez les néons, les sons, les gens. Gravez tout.",dur:"1h"},
-{ti:"22:00",type:"p",n:"Check-in en ligne + Réveil calculé",d:"Boarding pass sur téléphone. Réveil calculé selon heure de vol.",dur:"30 min"},
-{ti:"22:30",type:"s",n:"Dernière nuit au Japon 🇯🇵",d:"Endormez-vous avec 15 jours plein la tête.",dur:"—"},
+{ti:"—",type:"s",n:"Night",d:"7h30 of sleep."},
+{ti:"08:30",type:"p",n:"Wake up + Last breakfast in Japan",d:"Morning set at a kissaten or hotel. Last Japanese coffee.",dur:"1h"},
+{ti:"09:30",type:"e",n:"Hamarikyu Garden — Samurai garden by the bay",d:"Former hunting ground of the Tokugawa shoguns, 250 years of history. Saltwater pond (tides make it rise and fall). Late cherry blossoms still present. View of Shiodome skyscrapers — a striking contrast.",tip:"Take the Sumida River boat to Asakusa (¥1000) — a unique view of Tokyo from the water.",dur:"1h30"},
+{ti:"11:00",type:"e",n:"Asakusa — Final visit",d:"Senso-ji, Nakamise. Last memory of traditional Tokyo.",dur:"1h"},
+{ti:"12:00",type:"r",n:"Final lunch — A dish you haven't tried yet",d:"Chirashi bowl (sushi on rice), lacquered unagi eel, or light tempura set.",dur:"1h"},
+{ti:"13:00",type:"sh",n:"Last purchases / Forgotten items",d:"One final shopping session. Konbini: onigiri and snacks for the plane.",dur:"1h30"},
+{ti:"14:30",type:"ca",n:"Farewell café — The best of the trip",d:"Return to the café you liked best. A moment of reflection on these 15 days.",dur:"1h"},
+{ti:"15:30",type:"e",n:"Shibuya Sky — Final panoramic view",d:"Open-air rooftop at 230m, 360° view over the endless cityscape, Mt Fuji on clear days. The visual synthesis of the entire journey.",tip:"Book online in advance (¥2000). The 4pm light is magnificent.",dur:"1h30"},
+{ti:"17:00",type:"p",n:"Hotel — Final packing",d:"Finalise all 4 suitcases. Passport, boarding pass, chargers, remaining cash, bag weight check.",dur:"2h"},
+{ti:"19:00",type:"r",n:"🍽️ Farewell Dinner — The Best Meal",d:"THE last dinner in Japan. Omakase sushi (chef selects everything, ¥8000–15000), seasonal kaiseki, or the most memorable izakaya of the trip.",dur:"2h"},
+{ti:"21:00",type:"e",n:"Last night stroll",d:"Shinjuku or Shibuya one last time. Absorb the neon lights, the sounds, the people. Engrave it all.",dur:"1h"},
+{ti:"22:00",type:"p",n:"Online check-in + Set alarm",d:"Boarding pass on phone. Alarm set based on flight time.",dur:"30 min"},
+{ti:"22:30",type:"s",n:"Last night in Japan 🇯🇵",d:"Fall asleep with 15 days' worth of memories.",dur:"—"},
 ]},
 
-{id:"d16",nav:"10 Avr\n✈️ Vol",navClass:"tr",
-title:"Vendredi 10 avril — Sayonara Japan 🛫",
-loc:"Tokyo → Aéroport",
+{id:"d16",nav:"Apr 10\n✈️ Flight",navClass:"tr",
+title:"Friday April 10 — Sayonara Japan 🛫",
+loc:"Tokyo → Airport",
 wx:"🌤️",
-bags:"full",bagNote:"🧳×4 avec vous pour le vol",
-alerts:[{t:"b",m:"✈️ Narita : Narita Express depuis Shinjuku ou Tokyo Station → 1h15. Arrivez 3h avant le vol. / Haneda : Tokyo Monorail ou Keikyu → 30–45 min. Arrivez 2h30 avant le vol."}],
+bags:"full",bagNote:"🧳×4 with you for the flight",
+alerts:[{t:"b",m:"✈️ Narita: Narita Express from Shinjuku or Tokyo Station → 1h15. Arrive 3h before flight. / Haneda: Tokyo Monorail or Keikyu → 30–45 min. Arrive 2h30 before flight."}],
 blocks:[
-{ti:"Selon vol",type:"p",n:"Réveil calculé",d:"Heure vol – 3h check-in – temps trajet – 1h préparation."},
-{ti:"—",type:"p",n:"Réveil + Dernier konbini",d:"Onigiri, café, snacks pour l'avion. Check liste : passeport, boarding pass, 4 valises.",dur:"1h"},
-{ti:"—",type:"t",n:"Transfer → Aéroport",d:"Narita Express (JR Pass) ou Keikyu/Monorail pour Haneda.",dur:"30–90 min"},
-{ti:"—",type:"fx",n:"✈️ Vol retour — Arigatou Gozaimashita 🇯🇵",d:"Nikko dans les brumes de cryptomères · Koyasan et ses 200 000 lanternes la nuit · Sakura au pic absolu à Tokyo et Kyoto · Loutres de Kyoto · Bambouseraie cachée de Jojakko-ji · Nara sous les cerisiers et les cerfs · Fushimi Inari à 22h · Kimono dans Gion · Okunoin à l'aube dans la brume · Ni-chome vendredi soir · Forêt de bambou et thé matcha à Kamakura · Gyutan à Sendai · Zao Onsen blanc laiteux · Yamagata sans touristes.",dur:"—"},
+{ti:"Per flight",type:"p",n:"Calculated alarm",d:"Flight time – 3h check-in – travel time – 1h preparation."},
+{ti:"—",type:"p",n:"Wake up + Last konbini",d:"Onigiri, coffee, plane snacks. Checklist: passport, boarding pass, 4 suitcases.",dur:"1h"},
+{ti:"—",type:"t",n:"Transfer → Airport",d:"Narita Express (JR Pass) or Keikyu/Monorail for Haneda.",dur:"30–90 min"},
+{ti:"—",type:"fx",n:"✈️ Return flight — Arigatou Gozaimashita 🇯🇵",d:"Nikko in the cryptomeria mist · Koyasan and its 200,000 lanterns at night · Cherry blossoms at absolute peak in Tokyo and Kyoto · Kyoto otters · Hidden bamboo grove of Jojakko-ji · Nara under cherry trees with deer · Fushimi Inari at 10pm · Kimono in Gion · Okunoin at dawn in the fog · Ni-chome Friday night · Bamboo forest and matcha tea in Kamakura · Gyutan in Sendai · Zao Onsen milky white water · Yamagata without tourists.",dur:"—"},
 ]},
 ];
 
@@ -513,17 +500,10 @@ function build(){
       window.scrollTo(0,0);
     };
     nav.appendChild(btn);
-
     const div=document.createElement('div');
     div.id=d.id;
     div.className='day'+(i===0?' act':'');
-
-    // bag status
-    const bagColors={full:'move',light:'',send:'',hotel:'safe'};
-    const bagIcons={full:'🧳🧳🧳🧳 Valises avec vous',light:'🎒 Sacs légers',send:'📦 Envoi Takkyubin',hotel:'🏨 Valises sécurisées à l\'hôtel'};
-
     let h=`<div class="dh"><h2>${d.title}</h2><div class="dmeta"><span>${d.loc||''}</span><span>${d.wx||''}</span><span>${d.sk||''}</span></div><div class="dbadge">${(d.badges||[]).map(x=>`<span class="bdg">${x}</span>`).join('')}</div></div>`;
-
     if(d.bagNote){
       const cls=d.bags==='hotel'?'safe':d.bags==='send'?'':d.bags==='light'?'':'move';
       h+=`<div class="bag-status ${cls}">🧳 ${d.bagNote}</div>`;
